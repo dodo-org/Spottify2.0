@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Linq.Expressions;
@@ -63,9 +64,12 @@ namespace DB_Vergleich.DB_Tests
         // Ressourcen freigeben
         public static void Disconnect()
         {
-            session.Dispose();
-            cluster.Dispose();
-            Console.WriteLine("Verbindung zu Cassandra geschlossen.");
+            if(session != null)
+            { 
+                session.Dispose();
+                cluster.Dispose();
+                Console.WriteLine("Verbindung zu Cassandra geschlossen.");
+            }
         }
 
         // Schema (Keyspace und Tabelle) erstellen
@@ -79,6 +83,7 @@ namespace DB_Vergleich.DB_Tests
         // Daten einfügen
         public void InsertData()
         {
+
             times.StartWrite = DateTime.Now;
             foreach (User user in users)
             {
@@ -89,7 +94,7 @@ namespace DB_Vergleich.DB_Tests
                 Console.WriteLine(user.Id + " eingefügt.");
             }
             times.EndWrite = DateTime.Now;
-            Console.WriteLine("Daten Geschrieben");
+            
         }
 
         // Daten lesen
@@ -103,7 +108,6 @@ namespace DB_Vergleich.DB_Tests
                 var preparedStatement = session.Prepare(selectQuery);
                 var boundStatement = preparedStatement.Bind(getList[counter1]);
                 var result = session.Execute(boundStatement);
-
                 foreach (var row in result)
                 {
                     //Console.Write($", Name: {row.GetValue<string>("Name")}");

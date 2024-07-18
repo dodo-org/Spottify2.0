@@ -46,7 +46,6 @@ namespace DB_Vergleich.DB_Tests
 
                 }
                 times.EndWrite = DateTime.Now;
-                Console.WriteLine("Daten Geschrieben");
                 // User auslesen
                 times.StartRead = DateTime.Now;
                 for (int counter1 = 0; counter1 < getList.Count(); counter1++)
@@ -64,9 +63,6 @@ namespace DB_Vergleich.DB_Tests
                     }
                 }
                 times.EndRead = DateTime.Now;
-
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadKey();
             }
             catch 
             {

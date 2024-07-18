@@ -16,12 +16,16 @@ namespace DB_Vergleich.DB_Tests
         private int[] getList = new int[0];
         public Times RunTest(List<User> _users, int[] _getList, Times _times)
         {
+            users = _users;
+            getList = _getList;
+            times = _times;
+
             // Verbindungseinstellungen
             string host = "localhost";
             string port = "5432";
-            string username = "postgres";
-            string password = "your_password";
-            string database = "your_database";
+            string username = "user";
+            string password = "password";
+            string database = "mydb";
 
             // Verbindungszeichenfolge
             string connectionString = $"Host={host};Port={port};Username={username};Password={password};Database={database}";
@@ -35,8 +39,31 @@ namespace DB_Vergleich.DB_Tests
                     conn.Open();
                     Console.WriteLine("Verbindung erfolgreich hergestellt.");
 
+
+                    // SQL-Befehl zum Löschen der Tabelle, falls sie existiert
+                    string dropTableQuery = "DROP TABLE IF EXISTS users;";
+
+                    using (var dropCmd = new NpgsqlCommand(dropTableQuery, conn))
+                    {
+                        dropCmd.ExecuteNonQuery();
+                        Console.WriteLine("Tabelle gelöscht, falls sie existierte.");
+                    }
+
+                    // SQL-Befehl zum Erstellen einer neuen Tabelle
+                    string createTableQuery = @"
+                        CREATE TABLE users (
+                            id INT PRIMARY KEY,
+                            name VARCHAR(100)
+                        );";
+
+                    using (var createCmd = new NpgsqlCommand(createTableQuery, conn))
+                    {
+                        createCmd.ExecuteNonQuery();
+                        Console.WriteLine("Neue Tabelle erfolgreich erstellt.");
+                    }
                     // speichern
                     times.StartWrite = DateTime.Now;
+                    Console.WriteLine("test");
                     foreach (User user in users)
                     {
                         string insertQuery = "INSERT INTO users (id, name) VALUES (@id, @name) RETURNING id";
@@ -49,14 +76,14 @@ namespace DB_Vergleich.DB_Tests
                             Console.WriteLine($"Neuer User gespeichert mit ID: {newUserId}");
                         }
                     }
+                    
                     times.EndWrite = DateTime.Now;
-                    Console.WriteLine("Daten Geschrieben");
-
+                    
                     // User Auslesen
                     times.StartRead = DateTime.Now;
                     for (int counter1 = 0; counter1 < getList.Count(); counter1++)
                     {
-                        string selectQuery = "SELECT id, username, email FROM users WHERE username = @username";
+                        string selectQuery = "SELECT id, name FROM users WHERE id = @id";
                         using (var cmd = new NpgsqlCommand(selectQuery, conn))
                         {
                             cmd.Parameters.AddWithValue("id", getList[counter1]);
@@ -84,10 +111,11 @@ namespace DB_Vergleich.DB_Tests
                 {
                     // Schließen der Verbindung
                     conn.Close();
-                    Console.WriteLine("Verbindung geschlossen.");
                 }
             }
-        
+
+            times.diffRead = times.EndRead - times.StartRead;
+            times.diffWrite = times.EndWrite - times.StartWrite;
 
             return times;
         }

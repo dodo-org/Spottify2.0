@@ -58,7 +58,6 @@ namespace DB_Vergleich.DB_Tests
                         }
                     }
                     times.EndWrite = DateTime.Now;
-                    Console.WriteLine("Daten Geschrieben");
 
                     // read in redis
 
@@ -80,8 +79,7 @@ namespace DB_Vergleich.DB_Tests
 
                     }
                     times.EndRead = DateTime.Now;
-                    Console.WriteLine("Press any key to exit MySql...");
-                    Console.ReadKey();
+                    
 
                 }
                 catch (Exception ex)
