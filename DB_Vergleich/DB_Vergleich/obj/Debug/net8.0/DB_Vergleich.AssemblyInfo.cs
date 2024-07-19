@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DB_Vergleich")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b21c78d0b5bfa51a8989927c6b002f6c174ba851")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4e706e7b9e1e9fe39230998f55904c724bacc72")]
 [assembly: System.Reflection.AssemblyProductAttribute("DB_Vergleich")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DB_Vergleich")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

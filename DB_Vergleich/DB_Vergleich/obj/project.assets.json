@@ -5651,11 +5651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Vergleich.csproj",
+      "projectUniqueName": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Vergleich.csproj",
       "projectName": "DB_Vergleich",
-      "projectPath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Vergleich.csproj",
+      "projectPath": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Vergleich.csproj",
       "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-      "outputPath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\obj\\",
+      "outputPath": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5743,7 +5743,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

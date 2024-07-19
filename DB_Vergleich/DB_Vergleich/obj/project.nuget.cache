@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gph9HY7PQNM=",
+  "dgSpecHash": "7qiAVZRBaz/Nb6JQgOhV/TA+BGUfzcptizZlfg7s/+sDIr2g014EWsDFvrUiIz/AkwM0qlrndnu6Mjupo8L+Nw==",
   "success": true,
-  "projectFilePath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Vergleich.csproj",
+  "projectFilePath": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Vergleich.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\domin\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

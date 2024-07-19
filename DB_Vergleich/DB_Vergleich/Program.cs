@@ -1,11 +1,5 @@
 ﻿using System;
-using NRedisStack;
-using NRedisStack.DataTypes;
-using NRedisStack.RedisStackCommands;
-using StackExchange.Redis;
 
-
-using System.Diagnostics.Metrics;
 using DB_Vergleich.DataStructs;
 using DB_Vergleich.DB_Tests;
 
@@ -25,6 +19,7 @@ Times
 
 List<User> _users   = new List<User>();
 int[] getList       = new int[datacapGet];
+
 
 
 
