@@ -42,7 +42,7 @@ namespace DB_Vergleich.DB_Tests
 
                     // User in die MongoDB einfügen
                     collection.InsertOne(thmpUser);
-                    Console.WriteLine("User: " + user.Id);
+                    Console.WriteLine(user.Id + " eingefügt.");
 
                 }
                 times.EndWrite = DateTime.Now;
@@ -55,7 +55,7 @@ namespace DB_Vergleich.DB_Tests
 
                     if (foundUser != null)
                     {
-                        Console.WriteLine($"Gefundener User: {foundUser["_id"]} - {foundUser["name"]}");
+                        Console.WriteLine($"Nr:{counter1}, ID: {foundUser["_id"]}");
                     }
                     else
                     {

@@ -24,40 +24,55 @@ namespace DB_Vergleich.DB_Tests
                 connection.Open();
 
                 // Create a table
-                string createTableQuery = "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)";
+                string createTableQuery = "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT)";
                 using (SQLiteCommand command = new SQLiteCommand(createTableQuery, connection))
                 {
                     command.ExecuteNonQuery();
                 }
 
                 // Insert data into the table
-                string insertDataQuery = "INSERT INTO users (name, age) VALUES ('Alice', 30), ('Bob', 25)";
-                using (SQLiteCommand command = new SQLiteCommand(insertDataQuery, connection))
+
+                times.StartWrite = DateTime.Now;
+                foreach (User user in users)
                 {
-                    command.ExecuteNonQuery();
+                    string insertDataQuery = $"INSERT INTO users (id, name) VALUES ({user.Id}, {user.Name})";
+                    using (SQLiteCommand command = new SQLiteCommand(insertDataQuery, connection))
+                    {
+                        command.ExecuteNonQuery();
+                        Console.WriteLine(user.Id + " eingefügt.");
+                    }
                 }
+                times.EndWrite = DateTime.Now;
+
 
                 // Retrieve data from the table
-                string selectDataQuery = "SELECT * FROM users";
-                using (SQLiteCommand command = new SQLiteCommand(selectDataQuery, connection))
-                {
-                    using (SQLiteDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            int id = reader.GetInt32(0);
-                            string name = reader.GetString(1);
-                            int age = reader.GetInt32(2);
 
-                            Console.WriteLine($"ID: {id}, Name: {name}, Age: {age}");
+                times.StartRead = DateTime.Now;
+                for (int counter1 = 0; counter1 < getList.Count(); counter1++)
+                {
+                    string selectDataQuery = $"SELECT * FROM users WHERE Id = {getList[counter1]}";
+                    using (SQLiteCommand command = new SQLiteCommand(selectDataQuery, connection))
+                    {
+                        using (SQLiteDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                int id = reader.GetInt32(0);
+                                string name = reader.GetString(1);
+
+                                Console.WriteLine($"Nr:{counter1}, ID: {id}");
+                            }
                         }
                     }
                 }
+                times.EndRead = DateTime.Now;
+
 
                 connection.Close();
             }
-        
 
+            times.diffRead = times.EndRead - times.StartRead;
+            times.diffWrite = times.EndWrite - times.StartWrite;
             return times;
         }
     }

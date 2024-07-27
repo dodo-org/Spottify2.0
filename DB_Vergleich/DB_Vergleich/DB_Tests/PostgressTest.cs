@@ -73,7 +73,7 @@ namespace DB_Vergleich.DB_Tests
                             cmd.Parameters.AddWithValue("name", user.Name);
 
                             int newUserId = (int)cmd.ExecuteScalar();
-                            Console.WriteLine($"Neuer User gespeichert mit ID: {newUserId}");
+                            Console.WriteLine(newUserId + " eingefügt.");
                         }
                     }
                     
@@ -95,7 +95,7 @@ namespace DB_Vergleich.DB_Tests
                                     int id = reader.GetInt32(0);
                                     string name = reader.GetString(1);
 
-                                    Console.WriteLine($"ID: {id}, Username: {name}");
+                                    Console.WriteLine($"Nr:{counter1}, ID: {id}");
                                 }
                             }
                         }

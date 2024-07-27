@@ -54,12 +54,12 @@ namespace DB_Vergleich.DB_Tests
                             cmd.Parameters.AddWithValue("@id", user.Id);
                             cmd.Parameters.AddWithValue("@name", user.Name);
                             cmd.ExecuteNonQuery();
-                            Console.WriteLine(user.Id);
+                            Console.WriteLine(user.Id + " eingefügt.");
                         }
                     }
                     times.EndWrite = DateTime.Now;
 
-                    // read in redis
+                    // Daten lesen
 
                     times.StartRead = DateTime.Now;
                     for (int counter1 = 0; counter1 < getList.Count(); counter1++)
@@ -72,7 +72,7 @@ namespace DB_Vergleich.DB_Tests
                             {
                                 while (xamppDataReader.Read())
                                 {
-                                    Console.WriteLine("id= " + getList[counter1] + " " + xamppDataReader.GetString("Name"));
+                                    Console.WriteLine($"Nr:{counter1}, ID: {getList[counter1]}");
                                 }
                             }
                         }

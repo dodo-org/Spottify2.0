@@ -5,8 +5,8 @@ using DB_Vergleich.DB_Tests;
 
 // prepare Date
 
-int datacapSafe = 1000,
-    datacapGet  = 1000;
+int datacapSafe = 10000,
+    datacapGet  = 10000;
 
 Times
     Cassandra = new Times(),
@@ -105,4 +105,4 @@ Console.WriteLine("MongoDB      Get     Time: " + mongo.diffRead.TotalSeconds);
 Console.WriteLine("MySql        Get     Time: " + MySql.diffRead.TotalSeconds);
 Console.WriteLine("PostGress    Get     Time: " + postgress.diffRead.TotalSeconds);
 
-
+Console.ReadLine();

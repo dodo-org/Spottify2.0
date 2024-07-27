@@ -111,8 +111,8 @@ namespace DB_Vergleich.DB_Tests
                 foreach (var row in result)
                 {
                     //Console.Write($", Name: {row.GetValue<string>("Name")}");
-                    Console.Write($"ID: {row.GetValue<int>("id")}" );
-                    Console.WriteLine();
+                    Console.WriteLine($"Nr:{counter1}, ID: {row.GetValue<int>("id")}" );
+                    
                 }
 
             }
