@@ -16,7 +16,7 @@ resource "docker_image" "memcached" {
 }
 
 resource "docker_image" "hazelcast_host" {
-  name = "docker_container.hazelcast.ip_address"
+  name = "hazelcast/hazelcast:latest"
 }
 
 resource "docker_container" "redis" {
