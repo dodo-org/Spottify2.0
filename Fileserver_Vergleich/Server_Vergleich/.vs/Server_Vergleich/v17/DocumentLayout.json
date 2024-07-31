@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\fileserver_vergleich\\server_vergleich\\server_tests\\miniotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|solutionrelative:server_tests\\miniotests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\fileserver_vergleich\\server_vergleich\\server_tests\\glustertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|solutionrelative:server_tests\\glustertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\fileserver_vergleich\\server_vergleich\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\fileserver_vergleich\\server_vergleich\\server_tests\\nsftests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5EDB2B7-1E5A-4E12-9E0A-CC0105A16821}|Server_Vergleich.csproj|solutionrelative:server_tests\\nsftests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 335,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NsfTests.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Server_Tests\\NsfTests.cs",
+              "RelativeDocumentMoniker": "Server_Tests\\NsfTests.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Server_Tests\\NsfTests.cs",
+              "RelativeToolTip": "Server_Tests\\NsfTests.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T06:09:05.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlusterTests.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Server_Tests\\GlusterTests.cs",
+              "RelativeDocumentMoniker": "Server_Tests\\GlusterTests.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Server_Tests\\GlusterTests.cs",
+              "RelativeToolTip": "Server_Tests\\GlusterTests.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T06:08:17.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MinIoTests.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Server_Tests\\MinIoTests.cs",
+              "RelativeDocumentMoniker": "Server_Tests\\MinIoTests.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Server_Tests\\MinIoTests.cs",
+              "RelativeToolTip": "Server_Tests\\MinIoTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T06:00:33.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\Fileserver_Vergleich\\Server_Vergleich\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAApwEcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T05:57:43.804Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
