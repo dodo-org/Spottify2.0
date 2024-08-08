@@ -8,10 +8,13 @@ namespace Spotify_Api.DB_Connection.Config
     {
         public void Configure(EntityTypeBuilder<UserEntity> builder)
         {
-            builder.ToTable("Users");
+            _= builder.ToTable("Users");
             builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.Name).IsRequired();
+            builder.Property(x => x.UserName).IsRequired();
+            builder.Property(x => x.Email).IsRequired();
+            builder.Property(x => x.Password).IsRequired();
+            builder.Property(x => x.CreatedAt).IsRequired();
         }
     }
 }
