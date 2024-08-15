@@ -3,48 +3,8 @@
   "WorkspaceRootPath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\titleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\titleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\titleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\titleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\userconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\userconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\genreentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\genreentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\playlistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\playlistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\playlisttitleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\playlisttitleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\artistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\artistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\albumentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\albumentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\albumtitleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\albumtitleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\basecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\basecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,6 +13,66 @@
     {
       "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\basecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\basecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\playlisttitleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\playlisttitleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\userconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\userconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\playlistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\playlistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\titleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\titleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\albumentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\albumentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\playlisttitleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\playlisttitleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\artistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\artistconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\playlistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\playlistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\genreconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\genreconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\genreentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\genreentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\config\\albumconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\config\\albumconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\artistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\artistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\titleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\titleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\db_connection\\entitys\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|solutionrelative:db_connection\\entitys\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{020F7AD4-3DEF-430D-B287-35E541F7E2E4}|Spotify_Api.csproj|c:\\custom\\projekte\\systemarchitecture\\spottify2.0\\finalproject\\spotify_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -69,129 +89,155 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 370,
+          "DockedWidth": 402,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TitleConfig.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\TitleConfig.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Config\\TitleConfig.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\TitleConfig.cs",
-              "RelativeToolTip": "DB_Connection\\Config\\TitleConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T19:47:10.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TitleEntity.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\TitleEntity.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\TitleEntity.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\TitleEntity.cs",
-              "RelativeToolTip": "DB_Connection\\Entitys\\TitleEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T18:41:53.02Z",
+              "WhenOpened": "2024-08-15T10:23:03.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T09:11:09.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseContext.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\BaseContext.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\BaseContext.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\BaseContext.cs",
+              "RelativeToolTip": "DB_Connection\\BaseContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA/wCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T10:17:40.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlaylistTitleConfig.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\PlaylistTitleConfig.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Config\\PlaylistTitleConfig.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\PlaylistTitleConfig.cs",
+              "RelativeToolTip": "DB_Connection\\Config\\PlaylistTitleConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T10:14:01.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserConfig.cs",
               "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\UserConfig.cs",
               "RelativeDocumentMoniker": "DB_Connection\\Config\\UserConfig.cs",
               "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\UserConfig.cs",
               "RelativeToolTip": "DB_Connection\\Config\\UserConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA3AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T13:05:34.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlaylistEntity.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistEntity.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\PlaylistEntity.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistEntity.cs",
-              "RelativeToolTip": "DB_Connection\\Entitys\\PlaylistEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABnAAAA",
+              "DocumentIndex": 6,
+              "Title": "PlaylistConfig.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\PlaylistConfig.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Config\\PlaylistConfig.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\PlaylistConfig.cs",
+              "RelativeToolTip": "DB_Connection\\Config\\PlaylistConfig.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvw8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T19:10:35.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlaylistTitleEntity.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
-              "RelativeToolTip": "DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T19:22:07.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GenreEntity.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\GenreEntity.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\GenreEntity.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\GenreEntity.cs",
-              "RelativeToolTip": "DB_Connection\\Entitys\\GenreEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T19:08:51.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AlbumEntity.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\AlbumEntity.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\AlbumEntity.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\AlbumEntity.cs",
-              "RelativeToolTip": "DB_Connection\\Entitys\\AlbumEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T18:44:04.734Z",
+              "WhenOpened": "2024-08-15T10:11:27.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ArtistEntity.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\ArtistEntity.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\ArtistEntity.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\ArtistEntity.cs",
-              "RelativeToolTip": "DB_Connection\\Entitys\\ArtistEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Title": "TitleConfig.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\TitleConfig.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Config\\TitleConfig.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\TitleConfig.cs",
+              "RelativeToolTip": "DB_Connection\\Config\\TitleConfig.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T18:42:43.648Z",
+              "WhenOpened": "2024-08-08T19:47:10.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AlbumTitleEntity.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\AlbumTitleEntity.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\AlbumTitleEntity.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\AlbumTitleEntity.cs",
-              "RelativeToolTip": "DB_Connection\\Entitys\\AlbumTitleEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "DocumentIndex": 10,
+              "Title": "ArtistConfig.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\ArtistConfig.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Config\\ArtistConfig.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\ArtistConfig.cs",
+              "RelativeToolTip": "DB_Connection\\Config\\ArtistConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T18:50:30.095Z",
+              "WhenOpened": "2024-08-12T06:52:04.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
+              "Title": "GenreConfig.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\GenreConfig.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Config\\GenreConfig.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\GenreConfig.cs",
+              "RelativeToolTip": "DB_Connection\\Config\\GenreConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T10:09:59.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AlbumConfig.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\AlbumConfig.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Config\\AlbumConfig.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Config\\AlbumConfig.cs",
+              "RelativeToolTip": "DB_Connection\\Config\\AlbumConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T10:06:54.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TitleEntity.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\TitleEntity.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\TitleEntity.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\TitleEntity.cs",
+              "RelativeToolTip": "DB_Connection\\Entitys\\TitleEntity.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T18:41:53.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\UserEntity.cs",
               "RelativeDocumentMoniker": "DB_Connection\\Entitys\\UserEntity.cs",
@@ -204,20 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BaseContext.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\BaseContext.cs",
-              "RelativeDocumentMoniker": "DB_Connection\\BaseContext.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\BaseContext.cs",
-              "RelativeToolTip": "DB_Connection\\BaseContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T12:59:01.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -230,33 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T09:11:09.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Controller.cs",
-              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\Controller.cs",
-              "RelativeDocumentMoniker": "Controllers\\Controller.cs",
-              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\Controller.cs",
-              "RelativeToolTip": "Controllers\\Controller.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T20:42:22.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -265,6 +272,90 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-08-07T09:10:55.534Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 338,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\Controller.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Controllers\\Controller.cs",
+              "RelativeToolTip": "Controllers\\Controller.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T20:42:22.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlbumEntity.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\AlbumEntity.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\AlbumEntity.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\AlbumEntity.cs",
+              "RelativeToolTip": "DB_Connection\\Entitys\\AlbumEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T18:44:04.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlaylistTitleEntity.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
+              "RelativeToolTip": "DB_Connection\\Entitys\\PlaylistTitleEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T19:22:07.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlaylistEntity.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistEntity.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\PlaylistEntity.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\PlaylistEntity.cs",
+              "RelativeToolTip": "DB_Connection\\Entitys\\PlaylistEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T19:10:35.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GenreEntity.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\GenreEntity.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\GenreEntity.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\GenreEntity.cs",
+              "RelativeToolTip": "DB_Connection\\Entitys\\GenreEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T19:08:51.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ArtistEntity.cs",
+              "DocumentMoniker": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\ArtistEntity.cs",
+              "RelativeDocumentMoniker": "DB_Connection\\Entitys\\ArtistEntity.cs",
+              "ToolTip": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\DB_Connection\\Entitys\\ArtistEntity.cs",
+              "RelativeToolTip": "DB_Connection\\Entitys\\ArtistEntity.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T18:42:43.648Z",
               "EditorCaption": ""
             }
           ]

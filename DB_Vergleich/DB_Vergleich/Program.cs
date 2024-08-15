@@ -5,8 +5,8 @@ using DB_Vergleich.DB_Tests;
 
 // prepare Date
 
-int datacapSafe = 10000,
-    datacapGet  = 10000;
+int datacapSafe = 5000,
+    datacapGet  = 5000;
 
 Times
     Cassandra = new Times(),
