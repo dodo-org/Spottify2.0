@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj": {}
+    "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj": {}
   },
   "projects": {
-    "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj": {
+    "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj",
+        "projectUniqueName": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj",
         "projectName": "Spotify_Api",
-        "projectPath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj",
+        "projectPath": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj",
         "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-        "outputPath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\obj\\",
+        "outputPath": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spotify_Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

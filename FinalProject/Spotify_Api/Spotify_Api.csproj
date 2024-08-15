@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="Database\" />
+    <Folder Include="Models\Reply\" />
   </ItemGroup>
 
 </Project>

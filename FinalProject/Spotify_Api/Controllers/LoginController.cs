@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Spotify_Api.Models.Request;
 
 namespace Spotify_Api.Controllers
 {
@@ -8,11 +10,11 @@ namespace Spotify_Api.Controllers
     public class LoginController : ControllerBase
     {
         [HttpPost(Name ="PostLogin")]
-        public string Login([FromBody] string UserName, [FromBody] string Password)
+        public string Login([FromBody] LoginRequest_Model Request)
         {
-            if(UserName != null && Password != null)
+            if(Request.UserName != null && Request.Password != null)
             {
-                if(UserName == "dodo")
+                if(Request.UserName == "dodo")
                 {
                     return "Token = token1";
                 }

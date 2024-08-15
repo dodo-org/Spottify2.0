@@ -1,3 +1,6 @@
+//terraform init
+//terraform apply
+
 terraform {
   required_providers {
     docker = {
@@ -7,19 +10,23 @@ terraform {
   }
 }
 
-# Cassandra
-resource "docker_image" "cassandra" {
-  name = "cassandra:latest"
+# PostgreSQL
+resource "docker_image" "postgres" {
+  name = "postgres:latest"
 }
 
-resource "docker_container" "cassandra" {
-  image = docker_image.cassandra.image_id
-  name  = "cassandra"
+resource "docker_container" "postgres" {
+  image = docker_image.postgres.image_id
+  name  = "postgres"
   ports {
-    internal = 9042
-    external = 9042
+    internal = 5432
+    external = 5432
   }
-
+  env = [
+    "POSTGRES_DB=mydb",
+    "POSTGRES_USER=user",
+    "POSTGRES_PASSWORD=password"
+  ]
 }
 
 #Redis
@@ -61,3 +68,9 @@ resource "docker_container" "minio_container" {
     name = docker_network.spotify_network.name
   }
 }
+
+// API
+
+//Loadbalancer / rteverse Proxy
+
+

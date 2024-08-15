@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/H38Ljn0tlw=",
+  "dgSpecHash": "+f/PHSEEgUA=",
   "success": true,
-  "projectFilePath": "C:\\Custom\\Projekte\\SystemArchitecture\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj",
+  "projectFilePath": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spotify_Api\\Spotify_Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\domin\\.nuget\\packages\\cassandracsharpdriver\\3.15.0\\cassandracsharpdriver.3.15.0.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\efcore.cassandra\\2.0.5\\efcore.cassandra.2.0.5.nupkg.sha512",
