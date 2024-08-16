@@ -30,5 +30,20 @@ namespace Spotify_Api.Controllers
            return "";
         }
 
+        //[HttpPost(Name = "PostRegister")]
+        //public class Register([FromBody] RegisterRequest_Model Request)
+        //{
+        //    if(Request.UserName != null && Request.Password != null)
+        //    {
+        //        return "User wurde erstellt";
+        //    }
+        //    else
+        //    {
+        //        return "Bitte geben sie Beide werte an!";
+        //    }
+        //}
+
+
+
     }
 }

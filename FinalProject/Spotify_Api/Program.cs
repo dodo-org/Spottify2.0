@@ -10,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Initialize EF Core
 
+// befehl: Add-Migration <name>
+
 builder.Services.AddDbContext<BaseContext>(options =>
     options.UseNpgsql("Host=localhost;Database=mydb;Username=user;Password=password;Port=5432"));
 
