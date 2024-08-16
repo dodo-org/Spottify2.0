@@ -8,7 +8,18 @@ namespace Spotify_Api.DB_Connection.Config
     {
         public void Configure(EntityTypeBuilder<PlaylistTitleEntity> builder)
         {
-            throw new NotImplementedException();
+            builder.ToTable("PlaylistTitle");
+
+            builder.HasKey(x => new { x.PlaylistId, x.TitleId });
+
+            builder.HasOne(pt => pt.Playlist)
+               .WithMany(p => p.TitlePlaylists)
+               .HasForeignKey(pt => pt.PlaylistId);
+
+            builder.HasOne(pt => pt.Title)
+                   .WithMany(t => t.TitlePlaylists)
+                   .HasForeignKey(pt => pt.TitleId);
+
         }
     }
 }

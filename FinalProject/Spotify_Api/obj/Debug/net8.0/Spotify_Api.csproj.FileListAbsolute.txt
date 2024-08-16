@@ -216,3 +216,13 @@ M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\obj\Debug\net8.0\refint\
 M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\obj\Debug\net8.0\Spotify_Api.pdb
 M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\obj\Debug\net8.0\Spotify_Api.genruntimeconfig.cache
 M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\obj\Debug\net8.0\ref\Spotify_Api.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Npgsql.dll
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spotify_Api\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

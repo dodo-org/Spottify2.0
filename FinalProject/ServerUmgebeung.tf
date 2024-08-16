@@ -10,6 +10,11 @@ terraform {
   }
 }
 
+# Definiere ein eigenes Docker-Netzwerk
+resource "docker_network" "custom_network" {
+  name = "custom_network"
+}
+
 # PostgreSQL
 resource "docker_image" "postgres" {
   name = "postgres:latest"
@@ -27,6 +32,38 @@ resource "docker_container" "postgres" {
     "POSTGRES_USER=user",
     "POSTGRES_PASSWORD=password"
   ]
+
+  networks_advanced {
+    name = docker_network.custom_network.name
+  }
+}
+
+# pgAdmin Container
+resource "docker_image" "pgadmin" {
+  name = "dpage/pgadmin4:latest"
+}
+
+resource "docker_container" "pgadmin" {
+  image = docker_image.pgadmin.image_id
+  name  = "pgadmin"
+  ports {
+    internal = 80
+    external = 9090
+  }
+
+  env = [
+    "PGADMIN_DEFAULT_EMAIL=admin@example.com",
+    "PGADMIN_DEFAULT_PASSWORD=admin"
+  ]
+
+  # Verlinken mit dem PostgreSQL-Container
+  networks_advanced {
+    name = docker_network.custom_network.name
+  }
+
+  depends_on = [
+    docker_container.postgres
+  ]
 }
 
 #Redis
@@ -41,12 +78,14 @@ resource "docker_container" "redis" {
     internal = 6379
     external = 6379
   }
+
+  networks_advanced {
+    name = docker_network.custom_network.name
+  }
 }
 
 #Min.io
-resource "docker_network" "spotify_network" {
-  name = "spotify_file_servers_network"
-}
+
 
 resource "docker_image" "minio_image" {
   name = "minio/minio:latest"
@@ -65,7 +104,7 @@ resource "docker_container" "minio_container" {
   }
   command = ["server", "/data"]
   networks_advanced {
-    name = docker_network.spotify_network.name
+    name = docker_network.custom_network.name
   }
 }
 

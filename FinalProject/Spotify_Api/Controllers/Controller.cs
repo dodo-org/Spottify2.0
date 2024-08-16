@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Spotify_Api.Controllers
 {
+    [Authorize]
     [Route("[controller]")]
     [ApiController]
     public class TestController : ControllerBase

@@ -16,7 +16,7 @@
 
         // Others 
 
-        public ICollection<PlaylistTitleEntity> Playlists { get; set; } = new List<PlaylistTitleEntity>();
+        public ICollection<PlaylistTitleEntity> TitlePlaylists { get; set; } 
 
     }
 }

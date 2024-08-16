@@ -14,7 +14,12 @@ namespace Spotify_Api.DB_Connection.Config
             builder.Property(x => x.UserName).IsRequired();
             builder.Property(x => x.Email).IsRequired();
             builder.Property(x => x.Password).IsRequired();
-            builder.Property(x => x.CreatedAt).IsRequired();
+            builder.Property(x => x.Token).IsRequired();
+            builder.Property(x => x.TokenCreatedAt).IsRequired();
+
+            builder.HasMany(u => u.Playlists)
+                .WithOne(p => p.User)
+                .HasForeignKey(p => p.UserID);
         }
     }
 }

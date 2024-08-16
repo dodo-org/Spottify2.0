@@ -6,10 +6,11 @@
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public string Token { get; set; }
+        public DateTime TokenCreatedAt { get; set; }
 
         // Fremddaten
 
-        public ICollection<PlaylistEntity> Playlists { get; set; } = new List<PlaylistEntity>();
+        public ICollection<PlaylistEntity> Playlists { get; set; }
     }
 }

@@ -9,6 +9,6 @@
 
         // Fremddaten 
 
-        public ICollection<PlaylistTitleEntity> Titles { get; set; } = new List<PlaylistTitleEntity>();
+        public ICollection<PlaylistTitleEntity> TitlePlaylists { get; set; }
     }
 }

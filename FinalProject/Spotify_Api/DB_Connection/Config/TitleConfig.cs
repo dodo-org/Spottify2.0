@@ -16,26 +16,17 @@ namespace Spotify_Api.DB_Connection.Config
             builder.Property(x =>x.Description).IsRequired();
 
             // Fk`s
-            builder.Property(x => x.ArtistID).IsRequired();
-            builder
-                .HasOne(x => x.Artist)
-                .WithMany(x => x.Titles)
-                .HasForeignKey(x => x.ArtistID)
-                .IsRequired();
+            builder.HasOne(t => t.Artist)
+               .WithMany(a => a.Titles)
+               .HasForeignKey(t => t.ArtistID);
 
-            builder.Property(x => x.GenreId).IsRequired();
-            builder
-                .HasOne(x => x.Genre)
-                .WithMany(x => x.Titles)
-                .HasForeignKey(x => x.GenreId)
-                .IsRequired();
+            builder.HasOne(t => t.Genre)
+                   .WithMany(g => g.Titles)
+                   .HasForeignKey(t => t.GenreId);
 
-            builder.Property(x => x.AlbumId).IsRequired();
-            builder
-                .HasOne(x => x.Album)
-                .WithMany(x => x.Titles)
-                .HasForeignKey(x => x.AlbumId)
-                .IsRequired();
+            builder.HasOne(t => t.Album)
+                   .WithMany(a => a.Titles)
+                   .HasForeignKey(t => t.AlbumId);
 
 
         }
