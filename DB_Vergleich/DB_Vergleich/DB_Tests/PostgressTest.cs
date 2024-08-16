@@ -28,8 +28,8 @@ namespace DB_Vergleich.DB_Tests
             string database = "mydb";
 
             // Verbindungszeichenfolge
-            string connectionString = $"Host={host};Port={port};Username={username};Password={password};Database={database}";
-
+            //string connectionString = $"Host={host};Port={port};Username={username};Password={password};Database={database}";
+            string connectionString = "Host=localhost;Database=mydb;Username=user;Password=password;Port=5432";
             // Verbindung zur Datenbank herstellen
             using (var conn = new NpgsqlConnection(connectionString))
             {

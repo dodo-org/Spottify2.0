@@ -43,33 +43,33 @@ Console.WriteLine("End prepare data");
 
 // Test Cassandra
 
-Console.WriteLine("----------------------------");
-Console.WriteLine("Start Cassandra DB Test");
-CassandraTest CassTest = new CassandraTest();
+//Console.WriteLine("----------------------------");
+//Console.WriteLine("Start Cassandra DB Test");
+//CassandraTest CassTest = new CassandraTest();
 
-Cassandra = CassTest.RunTest(_users, getList, Cassandra);
+//Cassandra = CassTest.RunTest(_users, getList, Cassandra);
 
-Console.WriteLine("Ende Cassandra DB Test ");
-Console.WriteLine("----------------------------");
-// Test Mongo
+//Console.WriteLine("Ende Cassandra DB Test ");
+//Console.WriteLine("----------------------------");
+//// Test Mongo
 
-Console.WriteLine("----------------------------");
-Console.WriteLine("Start Mongo DB Test");
-MongoTest _MongoTest = new MongoTest();
+//Console.WriteLine("----------------------------");
+//Console.WriteLine("Start Mongo DB Test");
+//MongoTest _MongoTest = new MongoTest();
 
-mongo = _MongoTest.RunTest(_users, getList,mongo);
-Console.WriteLine("Ende Mongo DB Test ");
-Console.WriteLine("----------------------------");
-// MySql
+//mongo = _MongoTest.RunTest(_users, getList,mongo);
+//Console.WriteLine("Ende Mongo DB Test ");
+//Console.WriteLine("----------------------------");
+//// MySql
 
-Console.WriteLine("----------------------------");
-Console.WriteLine("Start MySql DB Test");
+//Console.WriteLine("----------------------------");
+//Console.WriteLine("Start MySql DB Test");
 
-MySqlTest _MySqlTest = new MySqlTest();
+//MySqlTest _MySqlTest = new MySqlTest();
 
-MySql = _MySqlTest.RunTest(_users, getList, MySql);
-Console.WriteLine("Ende MySql DB Test ");
-Console.WriteLine("----------------------------");
+//MySql = _MySqlTest.RunTest(_users, getList, MySql);
+//Console.WriteLine("Ende MySql DB Test ");
+//Console.WriteLine("----------------------------");
 
 // Postgress
 

@@ -10,6 +10,6 @@
 
         // Fremde Daten
 
-        public ICollection<TitleEntity> Titles { get; set; } = new List<TitleEntity>();
+        public ICollection<TitleEntity> Titles { get; set; }
     }
 }

@@ -5,6 +5,6 @@
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public ICollection<TitleEntity> Titles { get; set; } = new List<TitleEntity>();
+        public ICollection<TitleEntity> Titles { get; set; }
     }
 }
