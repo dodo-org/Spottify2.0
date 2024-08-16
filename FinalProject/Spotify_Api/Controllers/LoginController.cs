@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Spotify_Api.DB_Connection;
+using Spotify_Api.DB_Connection.Entitys;
 using Spotify_Api.Models.Request;
 
 namespace Spotify_Api.Controllers
@@ -9,39 +11,43 @@ namespace Spotify_Api.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
+        #region Constructor
+
+        LoginController() 
+        { 
+            _dbContext = new BaseContext();
+        }
+
+
+
+
+        #endregion
+
+        private BaseContext _dbContext;
+
+
+
         [HttpPost(Name ="PostLogin")]
-        public string Login([FromBody] LoginRequest_Model Request)
+        public IActionResult Login([FromBody] LoginRequest_Model Request)
         {
             if(Request.UserName != null && Request.Password != null)
             {
                 if(Request.UserName == "dodo")
                 {
-                    return "Token = token1";
+                    return Ok("Token = token1");
                 }
                 else
                 {
-                    return "die logindaten sind Falsch";
+                    return Unauthorized("die logindaten sind Falsch");
                 }
             }
             else
             {
-                return "Bitte geben sie Beide werte an!";
+                return Unauthorized("Bitte geben sie Beide werte an!");
             }
-           return "";
         }
 
-        //[HttpPost(Name = "PostRegister")]
-        //public class Register([FromBody] RegisterRequest_Model Request)
-        //{
-        //    if(Request.UserName != null && Request.Password != null)
-        //    {
-        //        return "User wurde erstellt";
-        //    }
-        //    else
-        //    {
-        //        return "Bitte geben sie Beide werte an!";
-        //    }
-        //}
+
 
 
 
