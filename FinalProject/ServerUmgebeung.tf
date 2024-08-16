@@ -10,9 +10,6 @@ terraform {
   }
 }
 
-provider "docker" {
-}
-
 # PostgreSQL
 resource "docker_image" "postgres" {
   name = "postgres:latest"
