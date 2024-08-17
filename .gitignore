@@ -65,13 +65,13 @@ FinalProject/Spotify_Api/Dockerfile.*
 
 # --- Regeln für den "Spottify2" Ordner in "FinalProject" ---
 
-# Visual Studio Code und Visual Studio spezifische Dateien
-FinalProject/Spottify2/.vscode/
-FinalProject/Spottify2/*.csproj.user
+# # Visual Studio Code und Visual Studio spezifische Dateien
+# FinalProject/Spottify2/.vscode/
+# FinalProject/Spottify2/*.csproj.user
 
-# .NET MAUI spezifische Dateien
-# FinalProject/Spottify2/Platforms/
-# FinalProject/Spottify2/Resources/
-FinalProject/Spottify2/*.nuspec
-FinalProject/Spottify2/nuget.exe
-FinalProject/Spottify2/*.nupkg
+# # .NET MAUI spezifische Dateien
+# # FinalProject/Spottify2/Platforms/
+# # FinalProject/Spottify2/Resources/
+# FinalProject/Spottify2/*.nuspec
+# FinalProject/Spottify2/nuget.exe
+# FinalProject/Spottify2/*.nupkg
