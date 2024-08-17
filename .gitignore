@@ -69,8 +69,8 @@ FinalProject/Spotify_Api/*.log
 FinalProject/Spotify_Api/*.log.*
 
 # OBACHT! könnte zu viel ignoreiren! ALERT | ALARM ---------------------------
-FinalProject/Spotify_Api/obj/
-FinalProject/Spotify_Api/bin/
+# FinalProject/Spotify_Api/obj/
+# FinalProject/Spotify_Api/bin/
 
 # Docker spezifische Dateien
 FinalProject/Spotify_Api/docker-compose.override.yml
