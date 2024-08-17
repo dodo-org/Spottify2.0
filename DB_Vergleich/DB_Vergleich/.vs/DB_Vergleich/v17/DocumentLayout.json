@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|m:\\projects\\craute\\spottify2.0\\db_vergleich\\db_vergleich\\db_tests\\postgresstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|solutionrelative:db_tests\\postgresstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|m:\\projects\\craute\\spottify2.0\\db_vergleich\\db_vergleich\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|m:\\projects\\craute\\spottify2.0\\db_vergleich\\db_vergleich\\db_tests\\mongotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|solutionrelative:db_tests\\mongotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|m:\\projects\\craute\\spottify2.0\\db_vergleich\\db_vergleich\\db_tests\\cassandratest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|solutionrelative:db_tests\\cassandratest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|m:\\projects\\craute\\spottify2.0\\db_vergleich\\db_vergleich\\db_tests\\mysqltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|solutionrelative:db_tests\\mysqltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|m:\\projects\\craute\\spottify2.0\\db_vergleich\\db_vergleich\\db_tests\\sqlitetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|solutionrelative:db_tests\\sqlitetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|m:\\projects\\craute\\spottify2.0\\db_vergleich\\db_vergleich\\datastructs\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E31E59BC-F0AC-491A-B2E5-FE6329FFCBD8}|DB_Vergleich.csproj|solutionrelative:datastructs\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 335,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CassandraTest.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\CassandraTest.cs",
+              "RelativeDocumentMoniker": "DB_Tests\\CassandraTest.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\CassandraTest.cs",
+              "RelativeToolTip": "DB_Tests\\CassandraTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T11:53:43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MongoTest.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\MongoTest.cs",
+              "RelativeDocumentMoniker": "DB_Tests\\MongoTest.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\MongoTest.cs",
+              "RelativeToolTip": "DB_Tests\\MongoTest.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAqwEwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T11:54:41.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostgressTest.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\PostgressTest.cs",
+              "RelativeDocumentMoniker": "DB_Tests\\PostgressTest.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\PostgressTest.cs",
+              "RelativeToolTip": "DB_Tests\\PostgressTest.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCcAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T11:57:07.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T08:42:48.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MySqlTest.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\MySqlTest.cs",
+              "RelativeDocumentMoniker": "DB_Tests\\MySqlTest.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\MySqlTest.cs",
+              "RelativeToolTip": "DB_Tests\\MySqlTest.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAgwEoAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T11:55:28.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SqLiteTest.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\SqLiteTest.cs",
+              "RelativeDocumentMoniker": "DB_Tests\\SqLiteTest.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DB_Tests\\SqLiteTest.cs",
+              "RelativeToolTip": "DB_Tests\\SqLiteTest.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwD4AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T11:58:02.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DataStructs\\User.cs",
+              "RelativeDocumentMoniker": "DataStructs\\User.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\DB_Vergleich\\DB_Vergleich\\DataStructs\\User.cs",
+              "RelativeToolTip": "DataStructs\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T15:19:11.62Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
