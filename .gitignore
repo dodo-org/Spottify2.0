@@ -4,12 +4,10 @@
 
 # Node, Docker und Terraform
 node_modules/
-Dockerfile
 *.tfstate
 *.tfstate.backup
 .terraform/
 .terraform.lock.hcl
-.dockerignore
 
 # Visual Studio generierte Dateien (Windows)
 .vscode/
@@ -45,7 +43,6 @@ $RECYCLE.BIN/
 *.lnk
 *.ini
 
-
 # --- Regeln für den "Spotify_Api" Ordner in "FinalProject" ---
 
 # Visual Studio Code und Visual Studio spezifische Dateien
@@ -55,8 +52,6 @@ FinalProject/Spotify_Api/*.csproj.user
 # ASP.NET spezifische Dateien (kompilierte Dateien, Protokolle, etc.)
 # FinalProject/Spotify_Api/bin/
 # FinalProject/Spotify_Api/obj/
-FinalProject/Spotify_Api/App_Data/
-FinalProject/Spotify_Api/aspnet_client/
 FinalProject/Spotify_Api/*.pubxml
 FinalProject/Spotify_Api/*.publish.xml
 FinalProject/Spotify_Api/*.log
@@ -68,11 +63,6 @@ FinalProject/Spotify_Api/docker-compose.*
 FinalProject/Spotify_Api/compose.*
 FinalProject/Spotify_Api/Dockerfile.*
 
-# Ignorieren der gesamten Datenbankordner (PostgresDB, Redis, Minio) und aller zugehörigen Dateien
-FinalProject/Spotify_Api/postgres/
-FinalProject/Spotify_Api/redis/
-FinalProject/Spotify_Api/minio/
-
 # --- Regeln für den "Spottify2" Ordner in "FinalProject" ---
 
 # Visual Studio Code und Visual Studio spezifische Dateien
@@ -80,8 +70,8 @@ FinalProject/Spottify2/.vscode/
 FinalProject/Spottify2/*.csproj.user
 
 # .NET MAUI spezifische Dateien
-FinalProject/Spottify2/Platforms/
-FinalProject/Spottify2/Resources/
+# FinalProject/Spottify2/Platforms/
+# FinalProject/Spottify2/Resources/
 FinalProject/Spottify2/*.nuspec
 FinalProject/Spottify2/packages/
 FinalProject/Spottify2/nuget/
