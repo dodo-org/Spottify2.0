@@ -14,7 +14,7 @@
         // Private constructor to prevent direct instantiation
         private JwtConfig()
         {
-            Key = "DeinGeheimerSchlüssel";
+            Key = "DeinGeheimerSchlüsselDerSuperLangSeinMuss";
             Issuer = "DeinIssuer";
             Audience = "DeineAudience";
             Subject = "DeinSubject";
