@@ -67,6 +67,8 @@ FinalProject/Spotify_Api/*.pubxml
 FinalProject/Spotify_Api/*.publish.xml
 FinalProject/Spotify_Api/*.log
 FinalProject/Spotify_Api/*.log.*
+FinalProject/Spotify_Api/obj/
+FinalProject/Spotify_Api/bin/
 
 # Docker spezifische Dateien
 FinalProject/Spotify_Api/docker-compose.override.yml
