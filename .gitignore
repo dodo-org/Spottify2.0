@@ -73,8 +73,6 @@ FinalProject/Spottify2/*.csproj.user
 # FinalProject/Spottify2/Platforms/
 # FinalProject/Spottify2/Resources/
 FinalProject/Spottify2/*.nuspec
-FinalProject/Spottify2/packages/
-FinalProject/Spottify2/nuget/
 FinalProject/Spottify2/nuget.exe
 FinalProject/Spottify2/AppPackages/
 FinalProject/Spottify2/*.nupkg
