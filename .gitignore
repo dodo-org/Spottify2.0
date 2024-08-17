@@ -4,74 +4,74 @@
 
 # Node, Docker und Terraform
 # node_modules/
-# *.tfstate
-# *.tfstate.backup
-# .terraform/
-# .terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
 
-# # Visual Studio generierte Dateien (Windows)
-# .vscode/
-# .vs/
-# *.user
-# *.suo
-# *.userosscache
-# *.sln.docstates
-# *.ide.cache
-# *.pdb
-# *.exe
-# *.dll
-# *.appx
-# *.appxbundle
-# *.msix
-# *.msixbundle
+# Visual Studio generierte Dateien (Windows)
+.vscode/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.ide.cache
+*.pdb
+*.exe
+*.dll
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
 
-# # Mac spezifische Dateien
-# .DS_Store
-# .AppleDouble
-# .LSOverride
+# Mac spezifische Dateien
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# # Thumbnails
-# ._*
+# Thumbnails
+._*
 
-# # Files that might appear in the root directory
-# Thumbs.db
-# ehthumbs.db
-# Desktop.ini
-# $RECYCLE.BIN/
+# Files that might appear in the root directory
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# # Windows System Files
-# *.lnk
-# *.ini
+# Windows System Files
+*.lnk
+*.ini
 
-# # --- Regeln für den "Spotify_Api" Ordner in "FinalProject" ---
+# --- Regeln für den "Spotify_Api" Ordner in "FinalProject" ---
+
+# Visual Studio Code und Visual Studio spezifische Dateien
+FinalProject/Spotify_Api/.vscode/
+FinalProject/Spotify_Api/*.csproj.user
+
+# ASP.NET spezifische Dateien (kompilierte Dateien, Protokolle, etc.)
+# FinalProject/Spotify_Api/bin/
+# FinalProject/Spotify_Api/obj/
+FinalProject/Spotify_Api/*.pubxml
+FinalProject/Spotify_Api/*.publish.xml
+FinalProject/Spotify_Api/*.log
+FinalProject/Spotify_Api/*.log.*
+
+# Docker spezifische Dateien
+FinalProject/Spotify_Api/docker-compose.override.yml
+FinalProject/Spotify_Api/docker-compose.*
+FinalProject/Spotify_Api/compose.*
+FinalProject/Spotify_Api/Dockerfile.*
+
+# --- Regeln für den "Spottify2" Ordner in "FinalProject" ---
 
 # # Visual Studio Code und Visual Studio spezifische Dateien
-# FinalProject/Spotify_Api/.vscode/
-# FinalProject/Spotify_Api/*.csproj.user
+# FinalProject/Spottify2/.vscode/
+# FinalProject/Spottify2/*.csproj.user
 
-# # ASP.NET spezifische Dateien (kompilierte Dateien, Protokolle, etc.)
-# # FinalProject/Spotify_Api/bin/
-# # FinalProject/Spotify_Api/obj/
-# FinalProject/Spotify_Api/*.pubxml
-# FinalProject/Spotify_Api/*.publish.xml
-# FinalProject/Spotify_Api/*.log
-# FinalProject/Spotify_Api/*.log.*
-
-# # Docker spezifische Dateien
-# FinalProject/Spotify_Api/docker-compose.override.yml
-# FinalProject/Spotify_Api/docker-compose.*
-# FinalProject/Spotify_Api/compose.*
-# FinalProject/Spotify_Api/Dockerfile.*
-
-# # --- Regeln für den "Spottify2" Ordner in "FinalProject" ---
-
-# # # Visual Studio Code und Visual Studio spezifische Dateien
-# # FinalProject/Spottify2/.vscode/
-# # FinalProject/Spottify2/*.csproj.user
-
-# # # .NET MAUI spezifische Dateien
-# # # FinalProject/Spottify2/Platforms/
-# # # FinalProject/Spottify2/Resources/
-# # FinalProject/Spottify2/*.nuspec
-# # FinalProject/Spottify2/nuget.exe
-# # FinalProject/Spottify2/*.nupkg
+# # .NET MAUI spezifische Dateien
+# # FinalProject/Spottify2/Platforms/
+# # FinalProject/Spottify2/Resources/
+FinalProject/Spottify2/*.nuspec
+FinalProject/Spottify2/nuget.exe
+FinalProject/Spottify2/*.nupkg
