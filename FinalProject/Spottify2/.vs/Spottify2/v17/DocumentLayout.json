@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\models\\request\\registerrequest_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:models\\request\\registerrequest_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\models\\request\\loginrequest_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:models\\request\\loginrequest_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\models\\request\\baserequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:models\\request\\baserequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\models\\viewlayoutsmodels\\loginlayoutmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:models\\viewlayoutsmodels\\loginlayoutmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\pages\\login\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:pages\\login\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\core\\singeltons\\url_enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:core\\singeltons\\url_enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\core\\singeltons\\api_communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:core\\singeltons\\api_communication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\pages\\login\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:pages\\login\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|m:\\projects\\craute\\spottify2.0\\finalproject\\spottify2\\pages\\login\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E7CE08-BC35-4AE5-A914-75A313ECCF1C}|Spottify2.csproj|solutionrelative:pages\\login\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,19 +55,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegisterRequest_Model.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\Request\\RegisterRequest_Model.cs",
+              "RelativeDocumentMoniker": "Models\\Request\\RegisterRequest_Model.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\Request\\RegisterRequest_Model.cs",
+              "RelativeToolTip": "Models\\Request\\RegisterRequest_Model.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T18:26:01.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRequest_Model.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\Request\\LoginRequest_Model.cs",
+              "RelativeDocumentMoniker": "Models\\Request\\LoginRequest_Model.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\Request\\LoginRequest_Model.cs",
+              "RelativeToolTip": "Models\\Request\\LoginRequest_Model.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T18:25:54.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseRequestModel.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\Request\\BaseRequestModel.cs",
+              "RelativeDocumentMoniker": "Models\\Request\\BaseRequestModel.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\Request\\BaseRequestModel.cs",
+              "RelativeToolTip": "Models\\Request\\BaseRequestModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T18:25:30.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginLayoutModel.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\ViewLayoutsModels\\LoginLayoutModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewLayoutsModels\\LoginLayoutModel.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Models\\ViewLayoutsModels\\LoginLayoutModel.cs",
+              "RelativeToolTip": "Models\\ViewLayoutsModels\\LoginLayoutModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T17:23:53.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "URL_Enum.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Core\\Singeltons\\URL_Enum.cs",
+              "RelativeDocumentMoniker": "Core\\Singeltons\\URL_Enum.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Core\\Singeltons\\URL_Enum.cs",
+              "RelativeToolTip": "Core\\Singeltons\\URL_Enum.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T17:19:04.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Api_Communication.cs",
+              "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Core\\Singeltons\\Api_Communication.cs",
+              "RelativeDocumentMoniker": "Core\\Singeltons\\Api_Communication.cs",
+              "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Core\\Singeltons\\Api_Communication.cs",
+              "RelativeToolTip": "Core\\Singeltons\\Api_Communication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T15:44:37.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T13:40:00.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -56,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "RegisterPage.xaml.cs",
               "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Pages\\Login\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\Login\\RegisterPage.xaml.cs",
@@ -69,13 +171,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Pages\\Login\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\Login\\LoginPage.xaml.cs",
               "ToolTip": "M:\\Projects\\CRaute\\Spottify2.0\\FinalProject\\Spottify2\\Pages\\Login\\LoginPage.xaml.cs",
               "RelativeToolTip": "Pages\\Login\\LoginPage.xaml.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwA0AAAAvAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T13:36:16.902Z",
               "EditorCaption": ""
