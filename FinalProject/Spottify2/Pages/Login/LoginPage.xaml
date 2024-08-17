@@ -1,0 +1,18 @@
+<!-- LoginPage.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Spottify2.Pages.Login.LoginPage"
+             Title="NewPage1">
+
+    <StackLayout Padding="30">
+        <Label Text="Willkommen" FontSize="Large" HorizontalOptions="Center" />
+
+        <Entry x:Name="UsernameEntry" Placeholder="Benutzername" />
+        <Entry x:Name="PasswordEntry" Placeholder="Passwort" IsPassword="True" />
+
+        <Button Text="Anmelden" Clicked="OnLoginButtonClicked" />
+
+        <Label Text="Noch kein Konto?" FontSize="Medium" HorizontalOptions="Center" />
+        <Button Text="Registrieren" Clicked="OnRegisterButtonClicked" />
+    </StackLayout>
+</ContentPage>
