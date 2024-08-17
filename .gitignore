@@ -67,6 +67,8 @@ FinalProject/Spotify_Api/*.pubxml
 FinalProject/Spotify_Api/*.publish.xml
 FinalProject/Spotify_Api/*.log
 FinalProject/Spotify_Api/*.log.*
+
+# OBACHT! könnte zu viel ignoreiren! ALERT | ALARM ---------------------------
 FinalProject/Spotify_Api/obj/
 FinalProject/Spotify_Api/bin/
 
