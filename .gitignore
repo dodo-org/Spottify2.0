@@ -3,7 +3,7 @@
 # --- Allgemeine Gitignore-Regeln ---
 
 # Node, Docker und Terraform
-node_modules/
+# node_modules/
 *.tfstate
 *.tfstate.backup
 .terraform/
