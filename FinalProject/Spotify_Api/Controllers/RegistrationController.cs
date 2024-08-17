@@ -50,8 +50,11 @@ namespace Spotify_Api.Controllers
 
             if (exist == false)
             {
+                //Todo: Password hashen?
                 _dbContext.User.Add(Reg_user);
                 _dbContext.SaveChanges();
+
+                //Todo: GGF gleich mit Token antworten?
                 return Ok("Der User wurde erstellt");
             }
             else

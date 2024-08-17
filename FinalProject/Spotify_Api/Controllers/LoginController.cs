@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Spotify_Api.DB_Connection;
 using Spotify_Api.DB_Connection.Entitys;
+using Spotify_Api.Models.Reply;
 using Spotify_Api.Models.Request;
+using Spotify_Api.Models.Singeltons;
 
 namespace Spotify_Api.Controllers
 {
@@ -11,40 +13,46 @@ namespace Spotify_Api.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        #region Constructor
 
-        LoginController() 
-        { 
-            _dbContext = new BaseContext();
-        }
-
-
-
-
-        #endregion
-
-        private BaseContext _dbContext;
+        private BaseContext _dbContext= new BaseContext();
 
 
 
         [HttpPost(Name ="PostLogin")]
         public IActionResult Login([FromBody] LoginRequest_Model Request)
         {
-            if(Request.UserName != null && Request.Password != null)
+            UserEntity? existUser = null;
+            //Find User By user Name
+            try
             {
-                if(Request.UserName == "dodo")
+                existUser = _dbContext.User
+                    .Where(x => x.UserName == Request.UserName)
+                    .Single();
+            }
+            catch
+            {
+                return Unauthorized("Der User existiert nicht");
+            }
+            
+            //Todo: Hash Password 
+            if(existUser.Password == Request.Password)
+            {
+                // generate Token
+
+                LoginReply_Model Reply = new LoginReply_Model()
                 {
-                    return Ok("Token = token1");
-                }
-                else
-                {
-                    return Unauthorized("die logindaten sind Falsch");
-                }
+                    Token = Token_Helper.Instance.GenerateJwtToken(existUser.UserName)
+                };
+
+                // Return Token
+                return Ok(Reply);
+
             }
             else
             {
-                return Unauthorized("Bitte geben sie Beide werte an!");
+                return Unauthorized("Das Passwort ist falsch");
             }
+            
         }
 
 

@@ -29,265 +29,265 @@
     <AppXManifest Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-16T13:42:32.064</Modified>
+      <Modified>2024-08-17T11:36:10.832</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-16T13:37:33.235</Modified>
+      <Modified>2024-08-17T11:36:10.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Spottify2.runtimeconfig.json">
       <PackagePath>Spottify2.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-16T13:37:32.956</Modified>
+      <Modified>2024-08-17T09:41:04.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Spottify2.dll">
       <PackagePath>Spottify2.dll</PackagePath>
-      <Modified>2024-08-16T13:42:31.695</Modified>
+      <Modified>2024-08-17T11:36:08.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Spottify2.exe</PackagePath>
-      <Modified>2024-08-16T13:42:31.699</Modified>
+      <Modified>2024-08-17T11:36:08.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-08-16T13:20:06.177</Modified>
+      <Modified>2024-08-17T09:36:27.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:41.197</Modified>
+      <Modified>2024-08-17T09:36:28.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:41.209</Modified>
+      <Modified>2024-08-17T09:36:28.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:41.226</Modified>
+      <Modified>2024-08-17T09:36:28.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:41.250</Modified>
+      <Modified>2024-08-17T09:36:28.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:41.346</Modified>
+      <Modified>2024-08-17T09:36:28.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-08-16T13:20:06.172</Modified>
+      <Modified>2024-08-17T09:36:28.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-08-16T13:20:06.173</Modified>
+      <Modified>2024-08-17T09:36:28.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.381</Modified>
+      <Modified>2024-08-17T09:36:28.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.380</Modified>
+      <Modified>2024-08-17T09:36:28.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.383</Modified>
+      <Modified>2024-08-17T09:36:28.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.383</Modified>
+      <Modified>2024-08-17T09:36:28.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.383</Modified>
+      <Modified>2024-08-17T09:36:28.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-08-16T13:32:42.382</Modified>
+      <Modified>2024-08-17T09:36:28.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Spottify2.deps.json">
       <PackagePath>Spottify2.deps.json</PackagePath>
-      <Modified>2024-08-16T13:37:32.825</Modified>
+      <Modified>2024-08-17T11:36:10.183</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\domin\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

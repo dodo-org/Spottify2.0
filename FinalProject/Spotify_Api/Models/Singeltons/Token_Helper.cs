@@ -9,7 +9,12 @@ namespace Spotify_Api.Models.Singeltons
 {
     public class Token_Helper 
     {
-        private string GenerateJwtToken(string username)
+        private static readonly Lazy<Token_Helper> _instance = new Lazy<Token_Helper>(() => new Token_Helper());
+
+        public static Token_Helper Instance => _instance.Value;
+
+
+        public string GenerateJwtToken(string username)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes( JwtConfig.Instance.Key));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
