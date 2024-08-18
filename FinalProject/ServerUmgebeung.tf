@@ -103,6 +103,7 @@ resource "docker_container" "minio_container" {
     external = 9000
   }
   command = ["server", "/data"]
+
   networks_advanced {
     name = docker_network.custom_network.name
   }
@@ -110,6 +111,28 @@ resource "docker_container" "minio_container" {
 
 // API
 
-//Loadbalancer / rteverse Proxy
+# Bauen des Docker-Images
+resource "docker_image" "Api_Image" {
+  name         = "api_image:latest"
+  build {
+    context    = "./Spotify_Api"
+  }
+}
+
+
+resource "docker_container" "Api_container" {
+  image = docker_image.Api_Image.image_id
+  name  = "Api_container"
+  ports {
+    internal = 8080
+    external = 8080
+  }
+
+  networks_advanced {
+    name = docker_network.custom_network.name
+  }
+}
+
+//Loadbalancer / reverse Proxy
 
 

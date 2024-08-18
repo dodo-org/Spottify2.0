@@ -41,7 +41,9 @@ namespace Spotify_Api.DB_Connection
             
             if (!builder.IsConfigured)
             {
-                var connectionString = "Host=localhost;Database=mydb;Username=user;Password=password;Port=5432";
+                
+                var connectionString = "Host=postgres;Database=mydb;Username=user;Password=password;Port=5432";
+                //var connectionString = "Host=localhost;Database=mydb;Username=user;Password=password;Port=5432";
                 builder.UseNpgsql(connectionString);
 
 

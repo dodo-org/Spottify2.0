@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 // befehl: Add-Migration <name>
 
 builder.Services.AddDbContext<BaseContext>(options =>
-    options.UseNpgsql("Host=localhost;Database=mydb;Username=user;Password=password;Port=5432"));
+    options.UseNpgsql("Host=postgres;Database=mydb;Username=user;Password=password;Port=5432"));
 
 
 
