@@ -24,10 +24,7 @@ namespace Spottify2.ViewModels
         #endregion
 
         #region Constructor
-        public RegisterPage_ViewModel()
-        {
-            RegisterCommand = new Command(Register);
-        }
+        
         public RegisterPage_ViewModel(INavigation navigation)
         {
             RegisterCommand = new Command(Register);
