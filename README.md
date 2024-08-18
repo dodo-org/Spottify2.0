@@ -19,12 +19,8 @@
     terraform apply
     ```
 
-#### Noch zu tun:
-1. Api Starten
-```
-dotnet publish -c Release -o ./Spotify_Api/bin/Release --source ./Spotify_Api
-dotnet ./FinalProject/Spotify_Api/bin/Release/net8.0/Spotify_Api.dll
-```
+### Todo
+- Container Api erst nach postgres starten
 
 ## Testen
 http://localhost:5000/swagger/index.html
