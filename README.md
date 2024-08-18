@@ -5,7 +5,7 @@
  ### Prequisits 
  - Terraform
  - .NET SDK
-   - Maui
+   - -NET Maui
    - ASP.Net Web Api
 
  ### Install 
@@ -18,6 +18,10 @@
     terraform init 
     terraform apply
     ```
+
+### How to run
+```cd Spottify2```
+```dotnet build -t:Run -f net8.0-maccatalyst```
 
 ### Todo
 - Container Api erst nach postgres starten
