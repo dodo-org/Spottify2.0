@@ -6,13 +6,14 @@
 
     <Grid RowDefinitions="Auto,* ,Auto">
         <!-- Header -->
-        <local:HeaderComponent Grid.Row="0"/>
+        <ContentView x:Name="HeaderContainer" Grid.Row="0"/>
+        
 
         <!-- Main View (dynamischer Bereich) -->
         <ContentView x:Name="MainViewContainer" Grid.Row="1"/>
 
         <!-- Footer -->
-        <local:FooterComponent Grid.Row="2"/>
+        <ContentView x:Name="FooterContainer" Grid.Row="2"/>
     </Grid>
 
 </ContentPage>

@@ -95,6 +95,8 @@
 
 	<ItemGroup>
 	  <Folder Include="Models\Enums\" />
+	  <Folder Include="Resources\Languages\German\" />
+	  <Folder Include="Resources\Languages\English\" />
 	</ItemGroup>
 
 </Project>
