@@ -28,3 +28,16 @@
 
 ## Testen
 http://localhost:5000/swagger/index.html
+
+
+  nginx-least-connections:
+    image: nginx:latest
+    ports:
+      - "8082:80"
+    volumes:
+      - ./least_connections.custom.conf:/etc/nginx/conf.d/least_connections.custom.conf:ro
+    command: /bin/sh -c "rm /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+    depends_on:
+      - backend1
+      - backend2
+      - backend3

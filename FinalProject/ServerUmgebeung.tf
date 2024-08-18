@@ -134,5 +134,17 @@ resource "docker_container" "Api_container" {
 }
 
 //Loadbalancer / reverse Proxy
+resource "docker_image" "nginx" {
+  name = "nginx:latest"
+}
+
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.name
+  name = "loadbalancer"
+  ports {
+    internal = 85
+    external = 8000
+  }
+}
 
 
