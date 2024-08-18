@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Spotify_Api.DB_Connection;
 using Spotify_Api.DB_Connection.Entitys;
+using Spotify_Api.Models.Reply;
 using Spotify_Api.Models.Request;
+using Spotify_Api.Models.Singeltons;
 
 namespace Spotify_Api.Controllers
 {
@@ -55,7 +57,14 @@ namespace Spotify_Api.Controllers
                 _dbContext.SaveChanges();
 
                 //Todo: GGF gleich mit Token antworten?
-                return Ok("Der User wurde erstellt");
+
+                LoginReply_Model Reply = new LoginReply_Model()
+                {
+                    Token = Token_Helper.Instance.GenerateJwtToken(Reg_user.UserName)
+                };
+
+                // Return Token
+                return Ok(Reply);
             }
             else
             {

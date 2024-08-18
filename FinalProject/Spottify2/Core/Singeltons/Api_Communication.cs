@@ -1,4 +1,5 @@
 ﻿
+using Newton = Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +7,8 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Spottify2.Models.Reply;
+using MJM_Systems.ApiCalls;
 
 namespace Spottify2.Core.Singeltons
 {
@@ -15,7 +18,7 @@ namespace Spottify2.Core.Singeltons
 
         public static Api_Communication Instance => _instance.Value;
 
-        private string Token;
+        public string Token;
 
         public void SetToken(string _token)
         {
@@ -175,19 +178,102 @@ namespace Spottify2.Core.Singeltons
             }
         }
 
+        public Task<bool?> Login(Dictionary<string, string> Input = null)
+        {
+            bool? _AnswerTrue = true;
+            bool? _AnswerFalse = false;
 
 
+            try
+            {
+                HttpClient client = new HttpClient();
 
 
+                // List data response.
+                var content = new StringContent(Newton.JsonConvert.SerializeObject(Input), Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = client.PostAsync(URL_S.Login, content).Result;  // Blocking call! Program will wait here until a response is received or a timeout occurs.
+
+                client.Dispose();
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var Result = response.Content.ReadAsStringAsync().Result;
+                    var PostResponse = JsonSerializer.Deserialize<LoginReply_Model>(Result);
+                    Token = PostResponse.token;
+                    return Task.FromResult(_AnswerTrue);
+                }
+                else
+                {
+                    HandleErrorRespons(response);
+                    Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                    return Task.FromResult(_AnswerFalse);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log Exception
+                return Task.FromResult(_AnswerFalse);
+            }
+        }
+
+        public Task<RegistrationReply_Model?> Register(Dictionary<string, string> Input = null)
+        {
+            RegistrationReply_Model? Response = null;
+
+            try
+            {
+                HttpClient client = new HttpClient();
 
 
+                // List data response.
+                var content = new StringContent(Newton.JsonConvert.SerializeObject(Input), Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = client.PostAsync(URL_S.Registration, content).Result;  // Blocking call! Program will wait here until a response is received or a timeout occurs.
+
+                client.Dispose();
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var Result = response.Content.ReadAsStringAsync().Result;
+                    RegistrationReply_Model? PostResponse = JsonSerializer.Deserialize<RegistrationReply_Model>(Result);
+                    Token = PostResponse.token;
+                    PostResponse.Response = RegistrationResponses.Success;
 
 
+                    return Task.FromResult(PostResponse);
+                }
+                else
+                {
+                    Response = new RegistrationReply_Model();
+                    if(response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                    {
+                        if(response.Content.ReadAsStringAsync().Result == "Der UserName existiert bereits")
+                        {
+                            Response.Response = RegistrationResponses.UsernameExists;
+                        }
+                        else
+                        {
+                            Response.Response = RegistrationResponses.EmailExists;
+                        }
+                        return Task.FromResult(Response);
+                    }
 
 
+                    HandleErrorRespons(response);
+                    Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                    return Task.FromResult(Response);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log Exception
+                throw ex;
+                return null;
+            }
 
-
-
+        }
     }
+
 }
 

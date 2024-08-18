@@ -177,3 +177,4 @@ M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10
 M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+M:\Projects\CRaute\Spottify2.0\FinalProject\Spottify2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll

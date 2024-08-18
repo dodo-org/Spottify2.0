@@ -1,6 +1,6 @@
 ﻿using Spottify2.Models.Request;
 
-namespace Spotify_Api.Models.Request
+namespace Spottify2.Models.Request
 {
     public class LoginRequest_Model : BaseRequestModel
     {
