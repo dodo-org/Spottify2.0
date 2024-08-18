@@ -1,7 +1,7 @@
-﻿namespace Spotify_Api.Models.Reply
+﻿namespace Spottify2.Models.Reply
 {
     public class LoginReply_Model
     {
-        public string Token { get; set; }
+        public string token { get; set; }
     }
 }

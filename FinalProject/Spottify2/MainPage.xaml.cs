@@ -1,4 +1,6 @@
-﻿namespace Spottify2
+﻿using Spottify2.Core.Singeltons;
+
+namespace Spottify2
 {
     public partial class MainPage : ContentPage
     {
@@ -7,6 +9,8 @@
         public MainPage()
         {
             InitializeComponent();
+
+            TokenDisplay.Text = "Token: " + Api_Communication.Instance.Token;
         }
 
         private void OnCounterClicked(object sender, EventArgs e)

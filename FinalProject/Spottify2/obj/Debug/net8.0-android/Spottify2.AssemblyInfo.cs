@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spottify2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2fdd9e0939cc6ada1e2fe3945aa3f503df29c130")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5fd74d2ab36a7e6ae3a6b2bad621648ce663f5b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spottify2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spottify2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
