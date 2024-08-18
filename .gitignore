@@ -56,10 +56,10 @@ FinalProject/Spotify_Api/*.log
 FinalProject/Spotify_Api/*.log.*
 
 # Docker spezifische Dateien
-FinalProject/Spotify_Api/docker-compose.override.yml
-FinalProject/Spotify_Api/docker-compose.*
-FinalProject/Spotify_Api/compose.*
-FinalProject/Spotify_Api/Dockerfile.*
+# FinalProject/Spotify_Api/docker-compose.override.yml
+# FinalProject/Spotify_Api/docker-compose.*
+# FinalProject/Spotify_Api/compose.*
+# FinalProject/Spotify_Api/Dockerfile.*
 
 # --- Regeln für den "Spottify2" Ordner in "FinalProject" ---
 
