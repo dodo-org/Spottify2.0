@@ -57,6 +57,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidJavaSource Remove="Resources\Languages\German\**" />
+	  <AndroidLibrary Remove="Resources\Languages\German\**" />
+	  <AndroidNativeLibrary Remove="Resources\Languages\German\**" />
+	  <AndroidResource Remove="Resources\Languages\German\**" />
+	  <Compile Remove="Resources\Languages\German\**" />
+	  <EmbeddedResource Remove="Resources\Languages\German\**" />
+	  <JavaSourceJar Remove="Resources\Languages\German\**" />
+	  <None Remove="Resources\Languages\German\**" />
+	  <ProguardConfiguration Remove="Resources\Languages\German\**" />
+	  <TransformFile Remove="Resources\Languages\German\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -95,8 +108,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Models\Enums\" />
-	  <Folder Include="Resources\Languages\German\" />
-	  <Folder Include="Resources\Languages\English\" />
 	</ItemGroup>
 
 </Project>

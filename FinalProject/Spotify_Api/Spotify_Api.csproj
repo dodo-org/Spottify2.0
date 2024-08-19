@@ -28,6 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Song\" />
+    <Folder Include="Controllers\Playlists\" />
+    <Folder Include="Controllers\User\" />
     <Folder Include="Database\" />
     <Folder Include="Models\Enums\" />
   </ItemGroup>
