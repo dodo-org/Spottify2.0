@@ -14,7 +14,7 @@ terraform {
 resource "docker_network" "custom_network" {
   name = "custom_network"
 }
-
+#------
 # PostgreSQL
 resource "docker_image" "postgres" {
   name = "postgres:latest"
@@ -37,7 +37,7 @@ resource "docker_container" "postgres" {
     name = docker_network.custom_network.name
   }
 }
-
+#------
 # pgAdmin Container
 resource "docker_image" "pgadmin" {
   name = "dpage/pgadmin4:latest"
@@ -65,7 +65,7 @@ resource "docker_container" "pgadmin" {
     docker_container.postgres
   ]
 }
-
+#------
 #Redis
 resource "docker_image" "redis" {
   name = "redis:latest"
@@ -83,10 +83,8 @@ resource "docker_container" "redis" {
     name = docker_network.custom_network.name
   }
 }
-
+#------
 #Min.io
-
-
 resource "docker_image" "minio_image" {
   name = "minio/minio:latest"
 }
@@ -108,10 +106,8 @@ resource "docker_container" "minio_container" {
     name = docker_network.custom_network.name
   }
 }
-
-// API
-
-# Bauen des Docker-Images
+#------
+# Build Docker Image for API
 resource "docker_image" "Api_Image" {
   name         = "api_image:latest"
   build {
@@ -119,21 +115,27 @@ resource "docker_image" "Api_Image" {
   }
 }
 
-
+# Deploy Two API Containers
 resource "docker_container" "Api_container" {
+  count = 2
   image = docker_image.Api_Image.image_id
-  name  = "Api_container"
+  name  = "Api_container_${count.index + 1}"
   ports {
     internal = 8080
-    external = 8080
+    external = "${8080 + count.index}"
+
   }
 
   networks_advanced {
     name = docker_network.custom_network.name
   }
+  
+  depends_on = [
+    docker_container.postgres
+  ]
 }
-
-//Loadbalancer / reverse Proxy
+#------
+# Load balancer / Reverse Proxy
 resource "docker_image" "nginx" {
   name = "nginx:latest"
 }
@@ -143,8 +145,21 @@ resource "docker_container" "nginx" {
   name = "loadbalancer"
   ports {
     internal = 85
-    external = 8000
+    external = 85
   }
+
+    volumes {
+      host_path      = "${abspath(path.module)}/nginx.conf"
+      container_path = "/etc/nginx/nginx.conf"
+  }
+
+  networks_advanced {
+    name = docker_network.custom_network.name
+  }
+
+  depends_on = [
+    docker_container.Api_container
+  ]
 }
 
 
