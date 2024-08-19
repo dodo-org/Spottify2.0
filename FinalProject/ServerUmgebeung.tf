@@ -39,32 +39,32 @@ resource "docker_container" "postgres" {
 }
 
 # pgAdmin Container
-resource "docker_image" "pgadmin" {
-  name = "dpage/pgadmin4:latest"
-}
-
-resource "docker_container" "pgadmin" {
-  image = docker_image.pgadmin.image_id
-  name  = "pgadmin"
-  ports {
-    internal = 80
-    external = 9090
-  }
-
-  env = [
-    "PGADMIN_DEFAULT_EMAIL=admin@example.com",
-    "PGADMIN_DEFAULT_PASSWORD=admin"
-  ]
-
-  # Verlinken mit dem PostgreSQL-Container
-  networks_advanced {
-    name = docker_network.custom_network.name
-  }
-
-  depends_on = [
-    docker_container.postgres
-  ]
-}
+#resource "docker_image" "pgadmin" {
+#  name = "dpage/pgadmin4:latest"
+#}
+#
+#resource "docker_container" "pgadmin" {
+#  image = docker_image.pgadmin.image_id
+#  name  = "pgadmin"
+#  ports {
+#    internal = 80
+#    external = 9090
+#  }
+#
+#  env = [
+#    "PGADMIN_DEFAULT_EMAIL=admin@example.com",
+#    "PGADMIN_DEFAULT_PASSWORD=admin"
+#  ]
+#
+#  # Verlinken mit dem PostgreSQL-Container
+#  networks_advanced {
+#    name = docker_network.custom_network.name
+#  }
+#
+#  depends_on = [
+#    docker_container.postgres
+#  ]
+#}
 
 #Redis
 resource "docker_image" "redis" {
@@ -109,14 +109,14 @@ resource "docker_container" "minio_container" {
   }
 }
 
-// API
+// API 1
 
 # Bauen des Docker-Images
 resource "docker_image" "Api_Image" {
   name         = "api_image:latest"
-  build {
-    context    = "./Spotify_Api"
-  }
+#  build {
+#    context    = "./Spotify_Api"
+#  }
 }
 
 
@@ -133,18 +133,64 @@ resource "docker_container" "Api_container" {
   }
 }
 
-//Loadbalancer / reverse Proxy
-resource "docker_image" "nginx" {
-  name = "nginx:latest"
-}
-
-resource "docker_container" "nginx" {
-  image = docker_image.nginx.name
-  name = "loadbalancer"
-  ports {
-    internal = 85
-    external = 8000
-  }
-}
-
-
+#// API 2
+#
+## Bauen des Docker-Images
+#resource "docker_image" "Api_Image2" {
+#  name         = "api_image2:latest"
+##  build {
+##    context    = "./Spotify_Api"
+##  }
+#}
+#
+#
+#resource "docker_container" "Api_container2" {
+#  image = docker_image.Api_Image2.image_id
+#  name  = "Api_container2"
+#  ports {
+#    internal = 8080
+#    external = 9090
+#  }
+#
+#  networks_advanced {
+#    name = docker_network.custom_network.name
+#  }
+#}
+#
+#//Loadbalancer / reverse Proxy
+#resource "docker_image" "nginx_image" {
+#  name = "nginx:latest"
+#}
+#
+#resource "docker_container" "nginx" {
+#  image = docker_image.nginx_image.image_id
+#  name = "loadbalancer"
+#  ports {
+#    internal = 85
+#    external = 8000
+#  }
+#}
+#
+#
+#resource "docker_container" "nginx_load_balancer" {
+#  image = docker_image.nginx_image.image_id
+#  name  = "nginx_load_balancer"
+#
+#  ports {
+#    internal = 80
+#    external = 80
+#  }
+#
+#  networks_advanced {
+#    name = docker_network.custom_network.name
+#  }
+#
+#  volumes {
+#    container_path = "/etc/nginx/conf.d/default.conf"
+#    host_path      = "${abspath(path.module)}/nginx.conf"
+#  }
+#}
+#
+#output "load_balancer_ip" {
+#  value = docker_container.nginx_load_balancer.network_data[0].ip_address
+#}

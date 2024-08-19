@@ -24,4 +24,4 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Spotify_Api.dll"]
 
-# docker build -t api_image:latest .
+# docker build -t api_image2:latest .
