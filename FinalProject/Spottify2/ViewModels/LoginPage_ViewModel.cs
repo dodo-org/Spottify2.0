@@ -12,12 +12,14 @@ using Spottify2.Models.Request;
 using Spottify2.Core.Singeltons;
 using MJM_Systems.ApiCalls;
 
+
 namespace Spottify2.ViewModels
 {
     public class LoginPage_ViewModel : NotifyPropertyChanged
     {
         private LoginLayoutModel _Propertys;
         private readonly INavigation _navigation;
+        //private string _Text_RegistrationButton = Resources.Registrate;
 
         #region Constructor
         public LoginPage_ViewModel()
@@ -61,6 +63,19 @@ namespace Spottify2.ViewModels
         }
         #endregion
 
+        #region StaticText
+
+        //public string Text_RegistrationButton
+        //{
+        //    get => _Text_RegistrationButton;
+        //    set
+        //    {
+        //        _Text_RegistrationButton = value;
+        //        OnPropertyChanged();
+        //    }
+        //}
+
+        #endregion
 
         #region Commands
         public ICommand LoginCommand { get; }

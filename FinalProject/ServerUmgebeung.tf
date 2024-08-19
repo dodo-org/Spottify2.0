@@ -110,9 +110,9 @@ resource "docker_container" "minio_container" {
 # Build Docker Image for API
 resource "docker_image" "Api_Image" {
   name         = "api_image:latest"
-  build {
-    context    = "./Spotify_Api"
-  }
+#  build {
+#    context    = "./Spotify_Api"
+#  }
 }
 
 # Deploy Two API Containers

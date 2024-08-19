@@ -21,6 +21,8 @@ namespace Spottify2.ViewModels.LayoutElements
         {
             _navigationService = navigationService;
             NavigateToProfile = new Command(NavigateToProfileView);
+            NavigateToSearch = new Command(NavigateToSearchView);
+            NavigateToSettings = new Command(NavigateToSettingsView);
         }
 
         #endregion

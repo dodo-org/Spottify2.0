@@ -14,7 +14,7 @@ namespace Spottify2.ViewModels.Core
         #region PrivateProperties
 
         private readonly NavigationService _navigationService;
-
+        
         #endregion
 
         #region Constructor
