@@ -10,8 +10,9 @@ namespace Spotify_Api.Controllers
         [HttpGet]
         public string GetApiInstance()
         {
-            return "Instance: 1";
-
+            string hostname = Environment.MachineName;
+            return $"Instance: {hostname}";
+            // return "Instance: 1";
         }
     }
 }
