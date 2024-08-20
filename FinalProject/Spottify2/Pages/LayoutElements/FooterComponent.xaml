@@ -58,20 +58,15 @@
                     Text="1:45" 
                     FontSize="Small" 
                     VerticalOptions="Center" 
-                    Margin="0,0,5,0"/>
-                <Entry
-                    x:Name="SearchEntry"
-                    Text="{Binding SearchString}"
-                    Placeholder="Search for a Title"
-                    HorizontalOptions="CenterAndExpand"
-                    BackgroundColor="{StaticResource BackgroundDarkerBlack}"
-                    VerticalOptions="Center" 
-                    WidthRequest="250" />
+                    Margin="0,0,10,0"/>
+                <Grid Grid.Row="1">
+                    <ProgressBar Progress="0.5"/>
+                </Grid>
                 <Label 
                     Text="3:02" 
                     FontSize="Small" 
                     VerticalOptions="Center" 
-                    Margin="5,0,0,0"/>
+                    Margin="10,0,0,0"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </Grid>
