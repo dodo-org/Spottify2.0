@@ -8,13 +8,46 @@
              BackgroundColor="{StaticResource BackgroundDarkerBlack}" Padding="10">
 
     <StackLayout Padding="30">
-        <Label Text="{x:Static lang:LoginRegistration.Registration_Title}" FontSize="Large" HorizontalOptions="Center" />
+        <Label 
+            Text="{x:Static lang:LoginRegistration.Registration_Title}" 
+            FontSize="Large" 
+            HorizontalOptions="Center" />
 
-        <Entry x:Name="UsernameEntry" Text="{Binding UserName}" Placeholder="Benutzername" />
-        <Entry x:Name="EmailEntry" Text="{Binding Email}" Placeholder="Email" />
-        <Entry x:Name="PasswordEntry" Text="{Binding Password}" Placeholder="Passwort" IsPassword="True" />
-        <Entry x:Name="ConfirmPasswordEntry" Text="{Binding ConfirmPassword}" Placeholder="Passwort bestätigen" IsPassword="True" />
+        <Entry 
+            x:Name="UsernameEntry" 
+            Text="{Binding UserName}" 
+            Placeholder="Username"
+            WidthRequest="500"
+            Margin="0,15,0,5" />
 
-        <Button Text="{x:Static btns:Buttons.Register}" Command="{Binding RegisterCommand}" />
+        <Entry 
+            x:Name="EmailEntry" 
+            Text="{Binding Email}" 
+            Placeholder="Email"
+            WidthRequest="500"
+            Margin="0,5,0,5" />
+
+        <Entry 
+            x:Name="PasswordEntry" 
+            Text="{Binding Password}" 
+            Placeholder="Passwort" 
+            IsPassword="True"
+            WidthRequest="500"
+            Margin="0,5,0,5" />
+
+        <Entry 
+            x:Name="ConfirmPasswordEntry" 
+            Text="{Binding ConfirmPassword}" 
+            Placeholder="Passwort bestätigen" 
+            IsPassword="True"
+            WidthRequest="500"
+            Margin="0,5,0,10" />
+
+        <Button 
+            Text="{x:Static btns:Buttons.Register}" 
+            Command="{Binding RegisterCommand}"
+            BackgroundColor="{StaticResource Orange}"
+            WidthRequest="200"
+            Margin="0,10,0,0"/>
     </StackLayout>
 </ContentPage>

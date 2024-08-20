@@ -87,14 +87,14 @@ namespace Spottify2.ViewModels
                 else
                 {
 
-                   Application.Current.MainPage.DisplayAlert("Error", "Wrong userdata", "OK");
+                   Application.Current.MainPage.DisplayAlert("Error", "Wrong username or password!", "OK");
                 }
 
                 
             }
             else
             {
-                Application.Current.MainPage.DisplayAlert("Error", "Please fill out ever field!", "OK");
+                Application.Current.MainPage.DisplayAlert("Error", "Please fill out all forms!", "OK");
 
             }
 

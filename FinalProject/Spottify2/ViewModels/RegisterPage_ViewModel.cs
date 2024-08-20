@@ -97,7 +97,7 @@ namespace Spottify2.ViewModels
             {
                 if(_password != _confirmPassword)
                 {
-                    Application.Current.MainPage.DisplayAlert("Error", "Die Passwörter Stimmen nicht überein", "OK");
+                    Application.Current.MainPage.DisplayAlert("Error", "Passwords need to be the same!", "OK");
                     return;
                 }
                 RegisterRequest_Model registerRequest = new RegisterRequest_Model
@@ -111,26 +111,26 @@ namespace Spottify2.ViewModels
 
                 if(registrationReply == null)
                 {
-                    Application.Current.MainPage.DisplayAlert("Error", "Ein schwerwiegender Fehler ist Aufgetreten", "OK");
+                    Application.Current.MainPage.DisplayAlert("Error", "Critical ERROR!", "OK");
                 }
                 else if (registrationReply.Response == RegistrationResponses.Success)
                 {
-                    Application.Current.MainPage.DisplayAlert("Erfolg", "Ihr neues benutzerkonto Wurde erstellt", "OK");
+                    Application.Current.MainPage.DisplayAlert("Erfolg", "Successful registration", "OK");
                     await _navigation.PushAsync(new MainPage());
                 }
                 else if(registrationReply.Response == RegistrationResponses.UsernameExists)
                 {
-                    Application.Current.MainPage.DisplayAlert("Error", "Der Username Existiert Bereits", "OK");
+                    Application.Current.MainPage.DisplayAlert("Error", "Username already exists!", "OK");
                 }
                 else if(registrationReply.Response == RegistrationResponses.EmailExists)
                 {
-                    Application.Current.MainPage.DisplayAlert("Error", "Die Email Existiert Bereits", "OK");
+                    Application.Current.MainPage.DisplayAlert("Error", "Email already exists!", "OK");
                 }
                 
             }
             else
             {
-                Application.Current.MainPage.DisplayAlert("Error", "Bitte alle Felder Ausfüllen", "OK");
+                Application.Current.MainPage.DisplayAlert("Error", "Please fill out all forms!", "OK");
             }
         }
 
