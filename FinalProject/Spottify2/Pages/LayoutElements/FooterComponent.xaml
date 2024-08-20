@@ -41,7 +41,7 @@
                     HorizontalOptions="Start"
                     Margin="0,0,0,10"/>
                 <ImageButton
-                    Source="pause.png"
+                    Source="pause_orange.png"
                     Command="{Binding NavigateToSearch}"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
