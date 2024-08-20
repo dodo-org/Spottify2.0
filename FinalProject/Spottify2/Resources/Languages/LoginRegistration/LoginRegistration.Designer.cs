@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Spottify2.Resources.Languages.Buttons {
+namespace Spottify2.Resources.Languages.LoginRegistration {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Spottify2.Resources.Languages.Buttons {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Buttons {
+    internal class LoginRegistration {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Buttons() {
+        internal LoginRegistration() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Spottify2.Resources.Languages.Buttons {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Spottify2.Resources.Languages.Buttons.Buttons", typeof(Buttons).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Spottify2.Resources.Languages.LoginRegistration.LoginRegistration", typeof(LoginRegistration).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,29 @@ namespace Spottify2.Resources.Languages.Buttons {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Login ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die No Account? ähnelt.
         /// </summary>
-        internal static string Login {
+        internal static string NoAccount_Msg {
             get {
-                return ResourceManager.GetString("Login", resourceCulture);
+                return ResourceManager.GetString("NoAccount_Msg", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Register ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Registration ähnelt.
         /// </summary>
-        internal static string Register {
+        internal static string Registration_Title {
             get {
-                return ResourceManager.GetString("Register", resourceCulture);
+                return ResourceManager.GetString("Registration_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Welcome ähnelt.
+        /// </summary>
+        internal static string Wellcome_Msg {
+            get {
+                return ResourceManager.GetString("Wellcome_Msg", resourceCulture);
             }
         }
     }

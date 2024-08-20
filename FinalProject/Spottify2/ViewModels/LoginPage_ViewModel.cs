@@ -19,7 +19,6 @@ namespace Spottify2.ViewModels
     {
         private LoginLayoutModel _Propertys;
         private readonly INavigation _navigation;
-        //private string _Text_RegistrationButton = Resources.Registrate;
 
         #region Constructor
         public LoginPage_ViewModel()
@@ -61,20 +60,6 @@ namespace Spottify2.ViewModels
                 OnPropertyChanged();
             }
         }
-        #endregion
-
-        #region StaticText
-
-        //public string Text_RegistrationButton
-        //{
-        //    get => _Text_RegistrationButton;
-        //    set
-        //    {
-        //        _Text_RegistrationButton = value;
-        //        OnPropertyChanged();
-        //    }
-        //}
-
         #endregion
 
         #region Commands

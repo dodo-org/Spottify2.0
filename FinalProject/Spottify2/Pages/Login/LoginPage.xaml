@@ -3,17 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Spottify2.Pages.Login.LoginPage"
              xmlns:local="clr-namespace:Spottify2.ViewModels"
-             Title="NewPage1">
+             xmlns:lang="clr-namespace:Spottify2.Resources.Languages.LoginRegistration"
+             xmlns:btns="clr-namespace:Spottify2.Resources.Languages.Buttons"
+             >
 
     <StackLayout Padding="30">
-        <Label Text="Willkommen" FontSize="Large" HorizontalOptions="Center" />
+        <Label Text="{x:Static lang:LoginRegistration.Wellcome_Msg}" FontSize="Large" HorizontalOptions="Center" />
 
         <Entry x:Name="UserNameEntry" Text="{Binding UserName}" Placeholder="Benutzername" />
         <Entry x:Name="PasswordEntry" Text="{Binding Password}" Placeholder="Passwort" IsPassword="True" />
 
-        <Button Text="Anmelden" Command="{Binding LoginCommand}" />
+        <Button Text="{x:Static btns:Buttons.Login}" Command="{Binding LoginCommand}" />
 
-        <Label Text="Noch kein Konto?" FontSize="Medium" HorizontalOptions="Center" />
-        <Button Text="Registrieren" Command="{Binding RegisterCommand}" />
+        <Label Text="{x:Static lang:LoginRegistration.NoAccount_Msg}" FontSize="Medium" HorizontalOptions="Center" />
+        <Button Text="{x:Static btns:Buttons.Register}" Command="{Binding RegisterCommand}" />
     </StackLayout>
 </ContentPage>

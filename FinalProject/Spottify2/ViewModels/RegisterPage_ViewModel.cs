@@ -8,17 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Spottify2.Resources.Languages.Buttons;
 
 namespace Spottify2.ViewModels
 {
     public class RegisterPage_ViewModel : NotifyPropertyChanged
     {
         #region PrivateProperties
-
+        
         private string _userName = "";
         private string _password = "";
         private string _confirmPassword = "";
         private string _email = "";
+
+        private string _RegisterButton_Text = Buttons.Register;
+
+
 
         private readonly INavigation _navigation;
         #endregion
