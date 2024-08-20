@@ -5,17 +5,40 @@
              xmlns:local="clr-namespace:Spottify2.ViewModels"
              xmlns:lang="clr-namespace:Spottify2.Resources.Languages.LoginRegistration"
              xmlns:btns="clr-namespace:Spottify2.Resources.Languages.Buttons"
-             >
+             BackgroundColor="{StaticResource BackgroundDarkerBlack}" Padding="10">
 
     <StackLayout Padding="30">
-        <Label Text="{x:Static lang:LoginRegistration.Wellcome_Msg}" FontSize="Large" HorizontalOptions="Center" />
+        <Label Text="{x:Static lang:LoginRegistration.Welcome_Msg}" FontSize="Large" HorizontalOptions="Center" />
 
-        <Entry x:Name="UserNameEntry" Text="{Binding UserName}" Placeholder="Benutzername" />
-        <Entry x:Name="PasswordEntry" Text="{Binding Password}" Placeholder="Passwort" IsPassword="True" />
+        <Entry 
+            x:Name="UserNameEntry" 
+            Text="{Binding UserName}"
+            WidthRequest="500"
+            Margin="0,10,0,5"
+            Placeholder="Username" />
+        <Entry 
+            x:Name="PasswordEntry"
+            Text="{Binding Password}"
+            Placeholder="Password"
+            WidthRequest="500"
+            IsPassword="True" />
 
-        <Button Text="{x:Static btns:Buttons.Login}" Command="{Binding LoginCommand}" />
+        <Button 
+            Text="{x:Static btns:Buttons.Login}" 
+            Command="{Binding LoginCommand}" 
+            BackgroundColor="{StaticResource Orange}"
+            WidthRequest="200"
+            Margin="0,20,0,15"/>
 
-        <Label Text="{x:Static lang:LoginRegistration.NoAccount_Msg}" FontSize="Medium" HorizontalOptions="Center" />
-        <Button Text="{x:Static btns:Buttons.Register}" Command="{Binding RegisterCommand}" />
+        <Label 
+            Text="{x:Static lang:LoginRegistration.NoAccount_Msg}" 
+            FontSize="Medium" 
+            HorizontalOptions="Center" />
+        <Button 
+            Text="{x:Static btns:Buttons.Register}" 
+            Command="{Binding RegisterCommand}"
+            BackgroundColor="{StaticResource Orange}"
+            WidthRequest="200"
+            Margin="0,10,0,0"/>
     </StackLayout>
 </ContentPage>

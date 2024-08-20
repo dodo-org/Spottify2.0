@@ -2,13 +2,14 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Spottify2.ViewModels.Core"
-             x:Class="Spottify2.Pages.Core.HomeView">
-    <VerticalStackLayout
+             x:Class="Spottify2.Pages.Core.HomeView"
+             BackgroundColor="{StaticResource BackgroundDarkerBlack}" Padding="10">
+    <!-- <VerticalStackLayout
         BackgroundColor="Red"
         >
         <Button
             Text="Search"
             Command="{Binding NavigateToSearch}"
             />
-    </VerticalStackLayout>
+    </VerticalStackLayout> -->
 </ContentView>

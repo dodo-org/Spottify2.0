@@ -3,29 +3,75 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Spottify2.ViewModels.LayoutElements"
              xmlns:btns="clr-namespace:Spottify2.Resources.Languages.Buttons"
-             x:Class="Spottify2.Pages.LayoutElements.HeaderComponent">
-    <HorizontalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Entry
-            x:Name="SearchEntry"
-            Text="{Binding SearchString}"
-            Placeholder="Search"
-            />
+             x:Class="Spottify2.Pages.LayoutElements.HeaderComponent"
+             Padding="10">
 
-        <Button
-            Text="{x:Static btns:Buttons.Search}"
-            Command="{Binding NavigateToSearch}"
-            />
-        <Button
-            Text="{x:Static btns:Buttons.Settings}"
-            Command="{Binding NavigateToSettings}"
-            />
-        <Button
-            Text="{x:Static btns:Buttons.Profile}"
-            Command="{Binding NavigateToProfile}"
-            />
-    </HorizontalStackLayout>
+    <Grid>
+        <!-- Define 3 columns: left for logo/title (optional), center for search, right for icons -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Left Section: Back and Home -->
+        <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start">
+            <ImageButton
+                Source="back_arrow.png"
+                Command="{Binding NavigateBack}"
+                BackgroundColor="Transparent"
+                WidthRequest="30"
+                HeightRequest="30"
+                Aspect="AspectFit"/>
+
+            <ImageButton
+                Source="home.png"
+                Command="{Binding NavigateToHome}"
+                BackgroundColor="Transparent"
+                WidthRequest="48"
+                HeightRequest="48"
+                Aspect="AspectFit"
+                Margin="10,0,10,0"/>
+        </HorizontalStackLayout>
+
+        <!-- Center Section: Search Bar and Button -->
+        <HorizontalStackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+            <Entry
+                x:Name="SearchEntry"
+                Text="{Binding SearchString}"
+                Placeholder="Search for a Title"
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="{StaticResource BackgroundDarkerBlack}"
+                VerticalOptions="Center" 
+                WidthRequest="250" />
+
+            <Button
+                Text="{x:Static btns:Buttons.Search}"
+                Command="{Binding NavigateToSearch}"
+                VerticalOptions="Center"
+                BackgroundColor="{StaticResource Orange}"
+                Margin="10,0,0,0"/>
+        </HorizontalStackLayout>
+
+        <!-- Right Section: Settings and Profile -->
+        <HorizontalStackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End">
+            <ImageButton
+                Source="gear_icon2.png"
+                Command="{Binding NavigateToSettings}"
+                BackgroundColor="Transparent"
+                WidthRequest="24"
+                HeightRequest="24"
+                Aspect="AspectFit"
+                Margin="0,0,10,0"/>
+
+            <ImageButton
+                Source="person_icon2.png"
+                Command="{Binding NavigateToProfile}"
+                BackgroundColor="Transparent"
+                WidthRequest="58"
+                HeightRequest="58"
+                Aspect="AspectFit"
+                Margin="0,-12,0,0"/>
+        </HorizontalStackLayout>
+    </Grid>
 </ContentView>

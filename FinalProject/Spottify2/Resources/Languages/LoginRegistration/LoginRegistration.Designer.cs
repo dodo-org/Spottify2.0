@@ -81,9 +81,9 @@ namespace Spottify2.Resources.Languages.LoginRegistration {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Welcome ähnelt.
         /// </summary>
-        internal static string Wellcome_Msg {
+        internal static string Welcome_Msg {
             get {
-                return ResourceManager.GetString("Wellcome_Msg", resourceCulture);
+                return ResourceManager.GetString("Welcome_Msg", resourceCulture);
             }
         }
     }

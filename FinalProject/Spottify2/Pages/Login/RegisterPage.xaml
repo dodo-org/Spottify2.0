@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:Spottify2.ViewModels"
              xmlns:lang="clr-namespace:Spottify2.Resources.Languages.LoginRegistration"
              xmlns:btns="clr-namespace:Spottify2.Resources.Languages.Buttons"
-             >
+             BackgroundColor="{StaticResource BackgroundDarkerBlack}" Padding="10">
 
     <StackLayout Padding="30">
         <Label Text="{x:Static lang:LoginRegistration.Registration_Title}" FontSize="Large" HorizontalOptions="Center" />

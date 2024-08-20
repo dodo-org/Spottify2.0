@@ -100,10 +100,10 @@
   <data name="Registration_Title" xml:space="preserve">
     <value>Registration</value>
   </data>
-  <data name="Wellcome_Msg" xml:space="preserve">
+  <data name="Welcome_Msg" xml:space="preserve">
     <value>Welcome</value>
   </data>
   <data name="NoAccount_Msg" xml:space="preserve">
-    <value>No Account?</value>
+    <value>No Account? No Problem!</value>
   </data>
 </root>
