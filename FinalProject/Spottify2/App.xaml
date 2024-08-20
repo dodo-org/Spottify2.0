@@ -2,6 +2,7 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Spottify2"
+             Shell.NavBarIsVisible="False"
              x:Class="Spottify2.App">
     <Application.Resources>
         <ResourceDictionary>

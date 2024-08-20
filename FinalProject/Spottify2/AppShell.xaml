@@ -5,7 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Spottify2"
     Shell.FlyoutBehavior="Disabled"
-    Title="Spottify2">
+    Shell.NavBarIsVisible="False"
+    Title="Spotify, only better">
 
     <ShellContent
         Title="Home"
