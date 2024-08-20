@@ -20,9 +20,8 @@
                 Source="back_arrow.png"
                 Command="{Binding NavigateBack}"
                 BackgroundColor="Transparent"
-                WidthRequest="10"
-                HeightRequest="10"
-                Aspect="AspectFit"
+                WidthRequest="5"
+                HeightRequest="5"
                 />
 
             <ImageButton
