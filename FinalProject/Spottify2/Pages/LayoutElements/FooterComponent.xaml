@@ -71,7 +71,7 @@
                     Text="3:02" 
                     FontSize="Small" 
                     VerticalOptions="Center" 
-                    Margin="0,0,5,0"/>
+                    Margin="5,0,0,0"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </Grid>
