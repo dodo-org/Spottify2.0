@@ -2,8 +2,8 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Spottify2.Pages.Core.SettingsView"
-             BackgroundColor="{StaticResource BackgroundDarkerBlack}" Padding="10">
-    <VerticalStackLayout>
+             Padding="10">
+    <VerticalStackLayout Padding="50" BackgroundColor="{StaticResource BackgroundDarkerBlack}">
         <Label 
             Text="No Settings are currently avalible"
             VerticalOptions="Center" 

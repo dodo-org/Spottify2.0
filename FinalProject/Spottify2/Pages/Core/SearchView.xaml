@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Spottify2.Pages.Core.SearchView"
              Padding="10">
-    <VerticalStackLayout Padding="40" BackgroundColor="{StaticResource BackgroundDarkerBlack}">
+    <VerticalStackLayout Padding="50" BackgroundColor="{StaticResource BackgroundDarkerBlack}">
         <Label 
             Text="Results"
             FontSize="Title"
