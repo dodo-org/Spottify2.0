@@ -1,11 +1,78 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Spottify2.Pages.LayoutElements.FooterComponent">
-    <VerticalStackLayout>
-        <Label 
-            Text="Footer"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="Spottify2.Pages.LayoutElements.FooterComponent"
+             xmlns:local="clr-namespace:Spottify2.ViewModels.LayoutElements"
+             xmlns:btns="clr-namespace:Spottify2.Resources.Languages.Buttons"
+             Padding="10">
+    <Grid>
+        <!-- Define 3 columns: left for logo/title (optional), center for search, right for icons -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Left Section: Back and Home -->
+        <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start">
+            <Image
+                Source="example_cover.jpg"
+                WidthRequest="100"
+                HeightRequest="100"
+                />
+            <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Padding="10">
+                <Label 
+                    Text="Katzenklo" 
+                    FontSize="Medium" />
+                <Label 
+                    Text="Helge Schneider" 
+                    FontSize="Small" />
+        </VerticalStackLayout>
+        </HorizontalStackLayout>
+        
+
+        <!-- Center Section: Search Bar and Button -->
+        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" Padding="10">
+            <HorizontalStackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                <ImageButton
+                    Source="previous.png"
+                    Command="{Binding NavigateToSearch}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    Margin="0,0,0,10"/>
+                <ImageButton
+                    Source="pause.png"
+                    Command="{Binding NavigateToSearch}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Margin="10,0,0,10"/>
+                <ImageButton
+                    Source="next.png"
+                    Command="{Binding NavigateToSearch}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    Margin="10,0,0,10"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label 
+                    Text="1:45" 
+                    FontSize="Small" 
+                    VerticalOptions="Center" 
+                    Margin="0,0,5,0"/>
+                <Entry
+                    x:Name="SearchEntry"
+                    Text="{Binding SearchString}"
+                    Placeholder="Search for a Title"
+                    HorizontalOptions="CenterAndExpand"
+                    BackgroundColor="{StaticResource BackgroundDarkerBlack}"
+                    VerticalOptions="Center" 
+                    WidthRequest="250" />
+                <Label 
+                    Text="3:02" 
+                    FontSize="Small" 
+                    VerticalOptions="Center" 
+                    Margin="0,0,5,0"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
 </ContentView>

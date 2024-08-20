@@ -2,14 +2,21 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Spottify2.ViewModels.Core"
-             x:Class="Spottify2.Pages.Core.ProfileView">
-    <ScrollView
-        >
+             x:Class="Spottify2.Pages.Core.ProfileView"
+             BackgroundColor="{StaticResource BackgroundDarkerBlack}" Padding="10">
+
+    <ScrollView>
         <VerticalStackLayout>
             <Label 
-        Text="Profiel"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" />
+                Text="Profile"
+                FontSize="Large" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Image
+                Source="person_icon2.png"
+                WidthRequest="100"
+                HeightRequest="100"
+                />
         </VerticalStackLayout>
 
 
