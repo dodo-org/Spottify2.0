@@ -9,14 +9,37 @@
         <VerticalStackLayout>
             <Label 
                 Text="Profile"
-                FontSize="Large" 
+                FontSize="Title" 
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
             <Image
                 Source="person_icon2.png"
                 WidthRequest="100"
-                HeightRequest="100"
-                />
+                HeightRequest="100" />
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,5">
+                <Label 
+                    Text="Username:   "
+                    FontSize="Medium" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                <Label 
+                    Text="Peter"
+                    FontSize="Medium" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label 
+                    Text="Email:   "
+                    FontSize="Medium" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                <Label 
+                    Text="peter.lustig@web.de"
+                    FontSize="Medium" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
 
 

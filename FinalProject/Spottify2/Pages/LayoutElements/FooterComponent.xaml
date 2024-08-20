@@ -32,7 +32,7 @@
         
 
         <!-- Center Section: Search Bar and Button -->
-        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start" Padding="10">
+        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Start">
             <HorizontalStackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
                 <ImageButton
                     Source="previous.png"

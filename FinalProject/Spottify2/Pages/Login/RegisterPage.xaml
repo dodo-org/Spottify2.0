@@ -10,7 +10,7 @@
     <StackLayout Padding="30">
         <Label 
             Text="{x:Static lang:LoginRegistration.Registration_Title}" 
-            FontSize="Large" 
+            FontSize="Title" 
             HorizontalOptions="Center" />
 
         <Entry 

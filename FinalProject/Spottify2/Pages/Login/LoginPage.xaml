@@ -8,7 +8,10 @@
              BackgroundColor="{StaticResource BackgroundDarkerBlack}" Padding="10">
 
     <StackLayout Padding="30">
-        <Label Text="{x:Static lang:LoginRegistration.Welcome_Msg}" FontSize="Large" HorizontalOptions="Center" />
+        <Label 
+            Text="{x:Static lang:LoginRegistration.Welcome_Msg}" 
+            FontSize="Title" 
+            HorizontalOptions="Center" />
 
         <Entry 
             x:Name="UserNameEntry" 
