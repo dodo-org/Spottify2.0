@@ -40,7 +40,7 @@ namespace Spottify2.ViewModels.Core
 
         private void NavigateToSearchView()
         {
-            _navigationService.NavigateTo(new SearchView(_navigationService));
+            _navigationService.NavigateTo(new SearchView(_navigationService, ""));
         }
         #endregion
     }

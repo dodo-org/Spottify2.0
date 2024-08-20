@@ -1,4 +1,5 @@
-﻿using Spottify2.Core.Services;
+﻿using Spottify2.Core;
+using Spottify2.Core.Services;
 using Spottify2.Pages.Core;
 using System;
 using System.Collections.Generic;
@@ -9,9 +10,13 @@ using System.Windows.Input;
 
 namespace Spottify2.ViewModels.LayoutElements
 {
-    class HeaderComponent_ViewModel
+    class HeaderComponent_ViewModel : NotifyPropertyChanged
     {
         #region PrivateProperties
+
+        private string _SearchString = ""; 
+
+
         private readonly NavigationService _navigationService;
 
         #endregion
@@ -29,7 +34,15 @@ namespace Spottify2.ViewModels.LayoutElements
 
         #region DisplayedProperties
 
-
+        public string SearchString
+        {
+            get => _SearchString;
+            set
+            {
+                _SearchString = value;
+                OnPropertyChanged(); 
+            }
+        }
 
         #endregion
 
@@ -52,7 +65,7 @@ namespace Spottify2.ViewModels.LayoutElements
 
         private void NavigateToSearchView()
         {
-            _navigationService.NavigateTo(new SearchView(_navigationService));
+            _navigationService.NavigateTo(new SearchView(_navigationService, SearchString));
         }
 
 

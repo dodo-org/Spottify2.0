@@ -7,5 +7,10 @@
         Text="Search"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
+        <Label
+            Text="{Binding SearchString}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            />
     </VerticalStackLayout>
 </ContentView>

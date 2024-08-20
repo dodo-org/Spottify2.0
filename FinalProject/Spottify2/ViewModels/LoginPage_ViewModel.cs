@@ -110,6 +110,5 @@ namespace Spottify2.ViewModels
 
         
 
-
     }
 }

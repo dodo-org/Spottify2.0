@@ -2,22 +2,29 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Spottify2.ViewModels.LayoutElements"
+             xmlns:btns="clr-namespace:Spottify2.Resources.Languages.Buttons"
              x:Class="Spottify2.Pages.LayoutElements.HeaderComponent">
     <HorizontalStackLayout>
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Entry
+            x:Name="SearchEntry"
+            Text="{Binding SearchString}"
+            Placeholder="Search"
+            />
+
         <Button
-            Text="Search"
+            Text="{x:Static btns:Buttons.Search}"
             Command="{Binding NavigateToSearch}"
             />
         <Button
-            Text="Settings"
+            Text="{x:Static btns:Buttons.Settings}"
             Command="{Binding NavigateToSettings}"
             />
         <Button
-            Text="Profile"
+            Text="{x:Static btns:Buttons.Profile}"
             Command="{Binding NavigateToProfile}"
             />
     </HorizontalStackLayout>

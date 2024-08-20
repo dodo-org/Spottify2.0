@@ -8,20 +8,32 @@ namespace Spottify2.ViewModels.Core
 
         #region PrivateProperties
 
+        private string _SearchString = "";
+
         private readonly NavigationService _navigationService;
 
         #endregion
 
         #region Constructor
-        public SearchView_ViewModel(NavigationService navigationService)
+        public SearchView_ViewModel(NavigationService navigationService, String SearchString)
         {
             _navigationService = navigationService;
+            _SearchString = SearchString;
         }
 
         #endregion
 
         #region DisplayedProperties
 
+        public string SearchString
+        {
+            get => _SearchString;
+            set
+            {
+                _SearchString = value;
+                OnPropertyChanged();
+            }
+        }
 
 
         #endregion
