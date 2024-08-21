@@ -17,7 +17,8 @@ namespace Spotify_Api.DB_Connection.MinIo
 
 
         public readonly MinioClient _minioClient;
-        public static string minioEndpoint = "localhost:9000";
+        public static string minioEndpoint = "minio:9000";
+        //public static string minioEndpoint = "localhost:9000";
         public static string minioAccessKey = "minio";
         public static string minioSecretKey = "minio123";
         public static string bucketName = "testbucket";
