@@ -106,6 +106,9 @@ resource "docker_container" "minio_container" {
     name = docker_network.custom_network.name
   }
 }
+
+
+
 #------
 # Build Docker Image for API
 resource "docker_image" "Api_Image" {

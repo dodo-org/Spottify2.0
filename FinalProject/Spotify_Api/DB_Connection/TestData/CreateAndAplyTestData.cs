@@ -30,8 +30,8 @@ namespace Spotify_Api.DB_Connection.TestData
             Users.Add(new UserEntity()
             {
                 Id = 3,
-                UserName = "Denis",
-                Email = "Denis@gmail.com",
+                UserName = "Dennis",
+                Email = "Dennis@gmail.com",
                 Password = "1234",
             });
 

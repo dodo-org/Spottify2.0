@@ -57,8 +57,7 @@ using (var scope = app.Services.CreateScope())
     //var dbContext = scope.ServiceProvider.GetRequiredService<BaseContext>();
     BaseContext dbContext = new BaseContext();
     dbContext.Database.Migrate();
-    CreateAndAplyTestData createAndAplyTestData = new CreateAndAplyTestData();
-    createAndAplyTestData.ApplyTestData();
+    
 }
 
 // Configure the HTTP request pipeline.
