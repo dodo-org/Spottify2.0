@@ -50,64 +50,64 @@ resource "docker_container" "primary_postgres" {
 }
 
 # Replica PostgreSQL Server
-# resource "docker_container" "replica_postgres" {
-#  image = docker_image.postgres.image_id
-#  name  = "replica_postgres"
-#  env = [
-#    "POSTGRES_DB=mydb",
-#    "POSTGRES_USER=user",
-#    "POSTGRES_PASSWORD=password",
-#  ]
-#  ports {
-#    internal = 5432
-#    external = 5433
-#  }
+resource "docker_container" "replica_postgres" {
+ image = docker_image.postgres.image_id
+ name  = "replica_postgres"
+ env = [
+   "POSTGRES_DB=mydb",
+   "POSTGRES_USER=user",
+   "POSTGRES_PASSWORD=password",
+ ]
+ ports {
+   internal = 5432
+   external = 5433
+ }
 #  command = ["/bin/bash", "-c", "rm -rf /etc/postgresql/data/* && pg_basebackup -h primary_postgres -D /etc/postgresql/data -U user -v -P --wal-method=stream"]
 
-# #  command = ["/docker-entrypoint.sh"]
-# #  entrypoint = [
-# #    "/bin/bash", 
-# #    "-c", 
-# #    <<-EOT
-# #      until pg_isready -h primary_postgres -p 5432 -U user; do
-# #        echo "Waiting for primary database..."
-# #        sleep 2
-# #      done
+ command = ["/docker-entrypoint.sh"]
+ entrypoint = [
+   "/bin/bash", 
+   "-c", 
+   <<-EOT
+     until pg_isready -h primary_postgres -p 5432 -U user; do
+       echo "Waiting for primary database..."
+       sleep 2
+     done
      
-# #      rm -rf /etc/postgresql/data/
-# #      docker exec primary_postgres psql -U user -d mydb -c "CREATE USER replicator WITH REPLICATION ENCRYPTED PASSWORD 'replicator_password';"
+     rm -rf /etc/postgresql/data/
+     docker exec primary_postgres psql -U user -d mydb -c "CREATE USER replicator WITH REPLICATION ENCRYPTED PASSWORD 'replicator_password';"
 
-# #      pg_basebackup -h primary_postgres -D /var/lib/postgresql/data -U replicator -v -P --wal-method=stream
+     pg_basebackup -h primary_postgres -D /etc/postgresql/data/ -U user -v -P --wal-method=stream
      
-# #      echo "standby_mode = 'on'" >> /etc/postgresql/data/postgresql.auto.conf
-# #      echo "primary_conninfo = 'host=primary_postgres port=5432 user=replicator password=replicator_password'" >> /etc/postgresql/data/postgresql.auto.conf
+     echo "standby_mode = 'on'" >> /etc/postgresql/data/postgresql.auto.conf
+     echo "primary_conninfo = 'host=primary_postgres port=5432 user=replicator password=replicator_password'" >> /etc/postgresql/data/postgresql.auto.conf
      
-# #      exec docker-entrypoint.sh postgres
-# #    EOT
-# #  ]
-#  # Volume for mounting postgresql.conf
+     exec docker-entrypoint.sh postgres
+   EOT
+ ]
+ # Volume for mounting postgresql.conf
 
-#  volumes {
-#    host_path      = "${abspath(path.module)}/pg_hba.conf"
-#    container_path = "/etc/postgresql/data/pg_hba.conf"
-#  }
-#  volumes {
-#    host_path      = "${abspath(path.module)}/postgresqlreplica.conf"
-#    container_path = "/etc/postgresql/data/postgresqlreplica.conf"
-#  }
+ volumes {
+   host_path      = "${abspath(path.module)}/pg_hba.conf"
+   container_path = "/etc/postgresql/data/pg_hba.conf"
+ }
+ volumes {
+   host_path      = "${abspath(path.module)}/postgresqlreplica.conf"
+   container_path = "/etc/postgresql/data/postgresqlreplica.conf"
+ }
 
-#  volumes {
-#    host_path      = "${abspath(path.module)}/replica_data"
-#    container_path = "/etc/postgresql/data/"
-#  }
+ volumes {
+   host_path      = "${abspath(path.module)}/replica_data"
+   container_path = "/etc/postgresql/data/"
+ }
 
-#  networks_advanced {
-#    name = docker_network.custom_network.name
-#  }
-#  depends_on = [
-#    docker_container.primary_postgres
-#  ]
-# }
+ networks_advanced {
+   name = docker_network.custom_network.name
+ }
+ depends_on = [
+   docker_container.primary_postgres
+ ]
+}
 
 
 #------

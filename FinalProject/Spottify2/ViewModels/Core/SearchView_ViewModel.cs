@@ -26,9 +26,6 @@ namespace Spottify2.ViewModels.Core
             _SearchString = SearchString;
 
             SearchResults = Api_Communication.Instance.Get<List<TitleSearchReply_Model>>(URL_S.GetTitles + _SearchString);
-
-
-
         }
 
         #endregion
