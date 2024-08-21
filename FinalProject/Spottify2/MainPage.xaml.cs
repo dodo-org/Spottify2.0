@@ -23,8 +23,5 @@ namespace Spottify2
             HeaderContainer.Content = new HeaderComponent(_navigationService);
             FooterContainer.Content = new FooterComponent(_navigationService);
         }
-
-
     }
-
 }
