@@ -62,18 +62,38 @@ resource "docker_container" "replica_postgres" {
     internal = 5432
     external = 5433
   }
+  # command = ["/bin/bash", "-c",  "rm -rf /var/lib/postgresql/data/* && pg_basebackup -h primary_postgres -D /var/lib/postgresql/data -U user -v -P --wal-method=stream"]
 
+  command = ["/docker-entrypoint.sh"]
+  entrypoint = [
+    "/bin/bash", 
+    "-c", 
+    <<-EOT
+      until pg_isready -h primary_postgres -p 5432 -U user; do
+        echo "Waiting for primary database..."
+        sleep 2
+      done
+      
+      rm -rf /var/lib/postgresql/data
+      pg_basebackup -h primary_postgres -D /var/lib/postgresql/data -U user -v -P --wal-method=stream
+      
+      echo "standby_mode = 'on'" >> /var/lib/postgresql/data/postgresql.auto.conf
+      echo "primary_conninfo = 'host=primary_postgres port=5432 user=user password=password'" >> /var/lib/postgresql/data/postgresql.auto.conf
+      
+      exec docker-entrypoint.sh postgres
+    EOT
+  ]
   # Volume for mounting postgresql.conf
-  volumes {
-    host_path      = "${abspath(path.module)}/postgresql.conf"
-    container_path = "/etc/postgresql/data/postgresql.conf"
-  }
 
-  # Volume for mounting pg_hba.conf
   volumes {
     host_path      = "${abspath(path.module)}/pg_hba.conf"
     container_path = "/etc/postgresql/data/pg_hba.conf"
   }
+  volumes {
+    host_path      = "${abspath(path.module)}/postgresqlreplica.conf"
+    container_path = "/etc/postgresql/data/postgresqlreplica.conf"
+  }
+
   volumes {
     host_path      = "${abspath(path.module)}/replica_data"
     container_path = "/var/lib/postgresql/data"
@@ -84,11 +104,6 @@ resource "docker_container" "replica_postgres" {
   }
   depends_on = [
     docker_container.primary_postgres
-  ]
-  # Command to run as a replica
-  command = [
-    # "bash", "-c",
-    # "pg_basebackup -h primary_postgres -D /var/lib/postgresql/data -U user -Fp -Xs -P -R && postgres"
   ]
 }
 
