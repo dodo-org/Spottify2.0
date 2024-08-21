@@ -15,7 +15,7 @@ namespace Spottify2
             InitializeComponent();
 
             _navigationService = new NavigationService(MainViewContainer);
-
+            NavigationPage.SetHasNavigationBar(this, false);
             // Start mit der initialen View
             _navigationService.NavigateTo(new HomeView(_navigationService));
             //TokenDisplay.Text = "Token: " + Api_Communication.Instance.Token;

@@ -8,7 +8,11 @@ namespace Spottify2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
+            var mainPage = new NavigationPage(new LoginPage());
+
+            NavigationPage.SetHasNavigationBar(mainPage, false);
+
+            MainPage = mainPage;
         }
     }
 }
