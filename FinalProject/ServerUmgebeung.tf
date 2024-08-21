@@ -46,55 +46,55 @@ resource "docker_container" "primary_postgres" {
 }
 
 # Replica PostgreSQL Server
-resource "docker_container" "replica_postgres" {
- image = docker_image.postgres.image_id
- name  = "replica_postgres"
- env = [
-  #  "POSTGRES_DB=mydb",
-   "POSTGRES_USER=replicator",
-   "POSTGRES_PASSWORD=replicator_password",
- ]
-  ports {
-   internal = 5432
-   external = 5433
-  }
-#  command = ["/bin/bash", "-c", "rm -rf /etc/postgresql/data/* && pg_basebackup -h primary_postgres -D /etc/postgresql/data -U user -v -P --wal-method=stream"]
+# resource "docker_container" "replica_postgres" {
+#  image = docker_image.postgres.image_id
+#  name  = "replica_postgres"
+#  env = [
+#   #  "POSTGRES_DB=mydb",
+#    "POSTGRES_USER=replicator",
+#    "POSTGRES_PASSWORD=replicator_password",
+#  ]
+#   ports {
+#    internal = 5432
+#    external = 5433
+#   }
+# #  command = ["/bin/bash", "-c", "rm -rf /etc/postgresql/data/* && pg_basebackup -h primary_postgres -D /etc/postgresql/data -U user -v -P --wal-method=stream"]
 
-  command = ["/docker-entrypoint.sh"]
-  entrypoint = [
-   "/bin/bash", 
-   "-c", 
-   <<-EOT
-     until pg_isready -h primary_postgres -p 5432 -U replicator; do
-       echo "Waiting for primary database..."
-       sleep 2
-     done
+#   command = ["/docker-entrypoint.sh"]
+#   entrypoint = [
+#    "/bin/bash", 
+#    "-c", 
+#    <<-EOT
+#      until pg_isready -h primary_postgres -p 5432 -U replicator; do
+#        echo "Waiting for primary database..."
+#        sleep 2
+#      done
      
-     rm -rf /etc/postgresql/data/
-     pg_basebackup -h primary_postgres -D /etc/postgresql/data/ -U replicator -v -P --wal-method=stream
+#      rm -rf /etc/postgresql/data/
+#      pg_basebackup -h primary_postgres -D /etc/postgresql/data/ -U replicator -v -P --wal-method=stream
      
-     echo "primary_conninfo = 'host=primary_postgres port=5432 user=replicator password=replicator_password'" >> /etc/postgresql/data/postgresql.auto.conf
-     exec docker-entrypoint.sh postgres
-   EOT
-  ]
+#      echo "primary_conninfo = 'host=primary_postgres port=5432 user=replicator password=replicator_password'" >> /etc/postgresql/data/postgresql.auto.conf
+#      exec docker-entrypoint.sh postgres
+#    EOT
+#   ]
 
-  volumes {
-    host_path      = "${abspath(path.module)}/postgresql.conf"
-    container_path = "/etc/postgresql/data/postgresql.conf"
-  }
-  volumes {
-   host_path      = "${abspath(path.module)}/pg_hba.conf"
-   container_path = "/etc/postgresql/data/pg_hba.conf"
-  }
+#   volumes {
+#     host_path      = "${abspath(path.module)}/postgresql.conf"
+#     container_path = "/etc/postgresql/data/postgresql.conf"
+#   }
+#   volumes {
+#    host_path      = "${abspath(path.module)}/pg_hba.conf"
+#    container_path = "/etc/postgresql/data/pg_hba.conf"
+#   }
 
 
-  networks_advanced {
-   name = docker_network.custom_network.name
-  }
-  depends_on = [
-   docker_container.primary_postgres
-  ]
-}
+#   networks_advanced {
+#    name = docker_network.custom_network.name
+#   }
+#   depends_on = [
+#    docker_container.primary_postgres
+#   ]
+# }
 
 
 #------
