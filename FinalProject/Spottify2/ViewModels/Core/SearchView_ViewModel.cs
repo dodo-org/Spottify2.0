@@ -1,5 +1,8 @@
-﻿using Spottify2.Core;
+﻿using MJM_Systems.ApiCalls;
+using Spottify2.Core;
 using Spottify2.Core.Services;
+using Spottify2.Core.Singeltons;
+using Spottify2.Models.Reply;
 
 namespace Spottify2.ViewModels.Core
 {
@@ -12,6 +15,8 @@ namespace Spottify2.ViewModels.Core
 
         private readonly NavigationService _navigationService;
 
+        private List<TitleSearchReply_Model>? _SearchResults = new List<TitleSearchReply_Model>();
+
         #endregion
 
         #region Constructor
@@ -19,6 +24,11 @@ namespace Spottify2.ViewModels.Core
         {
             _navigationService = navigationService;
             _SearchString = SearchString;
+
+            SearchResults = Api_Communication.Instance.Get<List<TitleSearchReply_Model>>(URL_S.GetTitles + _SearchString);
+
+
+
         }
 
         #endregion
@@ -35,7 +45,15 @@ namespace Spottify2.ViewModels.Core
             }
         }
 
-
+        public List<TitleSearchReply_Model> SearchResults
+        {
+            get => _SearchResults;
+            set
+            {
+                _SearchResults = value;
+                OnPropertyChanged();
+            }
+        }
         #endregion
 
 

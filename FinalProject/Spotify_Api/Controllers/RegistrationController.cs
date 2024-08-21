@@ -16,6 +16,7 @@ namespace Spotify_Api.Controllers
 
         private BaseContext _dbContext = new BaseContext();
 
+
         [HttpPost(Name = "PostRegister")]
         public IActionResult Register([FromBody] RegisterRequest_Model Request)
         {

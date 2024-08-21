@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Spotify_Api.DB_Connection;
@@ -11,9 +12,11 @@ using Spotify_Api.DB_Connection;
 namespace Spotify_Api.Migrations
 {
     [DbContext(typeof(BaseContext))]
-    partial class BaseContextModelSnapshot : ModelSnapshot
+    [Migration("20240820105610_ReworkArtist")]
+    partial class ReworkArtist
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,6 +24,23 @@ namespace Spotify_Api.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+
+            modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.AlbumEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Album", (string)null);
+                });
 
             modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.ArtistEntity", b =>
                 {
@@ -37,6 +57,23 @@ namespace Spotify_Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Artist", (string)null);
+                });
+
+            modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.GenreEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genre", (string)null);
                 });
 
             modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.PlaylistEntity", b =>
@@ -84,11 +121,18 @@ namespace Spotify_Api.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AlbumId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("ArtistID")
                         .HasColumnType("integer");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("GenreId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -96,9 +140,13 @@ namespace Spotify_Api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AlbumId");
+
                     b.HasIndex("ArtistID");
 
-                    b.ToTable("Title", (string)null);
+                    b.HasIndex("GenreId");
+
+                    b.ToTable("TitleEntity");
                 });
 
             modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.UserEntity", b =>
@@ -164,16 +212,42 @@ namespace Spotify_Api.Migrations
 
             modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.TitleEntity", b =>
                 {
+                    b.HasOne("Spotify_Api.DB_Connection.Entitys.AlbumEntity", "Album")
+                        .WithMany("Titles")
+                        .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Spotify_Api.DB_Connection.Entitys.ArtistEntity", "Artist")
                         .WithMany("Titles")
                         .HasForeignKey("ArtistID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Spotify_Api.DB_Connection.Entitys.GenreEntity", "Genre")
+                        .WithMany("Titles")
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Album");
+
                     b.Navigation("Artist");
+
+                    b.Navigation("Genre");
+                });
+
+            modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.AlbumEntity", b =>
+                {
+                    b.Navigation("Titles");
                 });
 
             modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.ArtistEntity", b =>
+                {
+                    b.Navigation("Titles");
+                });
+
+            modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.GenreEntity", b =>
                 {
                     b.Navigation("Titles");
                 });

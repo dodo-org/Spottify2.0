@@ -13,20 +13,20 @@ namespace Spotify_Api.DB_Connection.Config
             builder.HasKey(x => x.Id);
 
             builder.Property(x  => x.Name).IsRequired();
-            builder.Property(x =>x.Description).IsRequired();
+            builder.Property(x =>x.Description).IsRequired(false);
 
             // Fk`s
             builder.HasOne(t => t.Artist)
                .WithMany(a => a.Titles)
                .HasForeignKey(t => t.ArtistID);
 
-            builder.HasOne(t => t.Genre)
-                   .WithMany(g => g.Titles)
-                   .HasForeignKey(t => t.GenreId);
+            //builder.HasOne(t => t.Genre)
+            //       .WithMany(g => g.Titles)
+            //       .HasForeignKey(t => t.GenreId);
 
-            builder.HasOne(t => t.Album)
-                   .WithMany(a => a.Titles)
-                   .HasForeignKey(t => t.AlbumId);
+            //builder.HasOne(t => t.Album)
+            //       .WithMany(a => a.Titles)
+            //       .HasForeignKey(t => t.AlbumId);
 
 
         }

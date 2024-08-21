@@ -4,19 +4,19 @@ using Spotify_Api.DB_Connection.Entitys;
 
 namespace Spotify_Api.DB_Connection.Config
 {
-    public class GenreConfig : IEntityTypeConfiguration<GenreEntity>
-    {
-        public void Configure(EntityTypeBuilder<GenreEntity> builder)
-        {
-            builder.ToTable("Genre");
+    //public class GenreConfig : IEntityTypeConfiguration<GenreEntity>
+    //{
+    //    public void Configure(EntityTypeBuilder<GenreEntity> builder)
+    //    {
+    //        builder.ToTable("Genre");
 
-            builder.HasKey(x => x.Id);
+    //        builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.Name).IsRequired();
+    //        builder.Property(x => x.Name).IsRequired();
 
-            builder.HasMany(g => g.Titles)
-               .WithOne(t => t.Genre)
-               .HasForeignKey(t => t.GenreId);
-        }
-    }
+    //        builder.HasMany(g => g.Titles)
+    //           .WithOne(t => t.Genre)
+    //           .HasForeignKey(t => t.GenreId);
+    //    }
+    //}
 }

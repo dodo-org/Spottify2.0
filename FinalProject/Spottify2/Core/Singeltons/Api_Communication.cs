@@ -52,7 +52,7 @@ namespace Spottify2.Core.Singeltons
             {
                 HttpClient client = new HttpClient();
 
-                client.DefaultRequestHeaders.Add("Token", Token);
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + Token);
                 // Add an Accept header for JSON format.
                 client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
@@ -83,11 +83,13 @@ namespace Spottify2.Core.Singeltons
                 {
                     // Error handdler aufrufen
                     HandleErrorRespons(response);
+                    throw new Exception("Error");
                     return default;
                 }
             }
             catch (Exception e)
             {
+                throw e;
                 return default;
             }
         }

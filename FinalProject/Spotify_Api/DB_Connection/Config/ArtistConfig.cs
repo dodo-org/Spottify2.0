@@ -12,8 +12,6 @@ namespace Spotify_Api.DB_Connection.Config
 
             builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.FName).IsRequired();
-            builder.Property(x => x.LName).IsRequired(); 
             builder.Property(x => x.StageName).IsRequired();
 
             builder.HasMany(a => a.Titles)
