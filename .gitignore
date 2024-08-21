@@ -12,6 +12,8 @@
 *.DS_Store
 .vscode/
 
+/FinalProject/primary_data/*
+/FinalProject/replica_data/*
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

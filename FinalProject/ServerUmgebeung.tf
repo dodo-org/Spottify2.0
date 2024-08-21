@@ -1,6 +1,3 @@
-//terraform init
-//terraform apply
-
 terraform {
   required_providers {
     docker = {
@@ -15,14 +12,14 @@ resource "docker_network" "custom_network" {
   name = "custom_network"
 }
 #------
-# PostgreSQL
+# Primary PostgreSQL Server
 resource "docker_image" "postgres" {
   name = "postgres:latest"
 }
 
-resource "docker_container" "postgres" {
+resource "docker_container" "primary_postgres" {
   image = docker_image.postgres.image_id
-  name  = "postgres"
+  name  = "primary_postgres"
   ports {
     internal = 5432
     external = 5432
@@ -30,13 +27,72 @@ resource "docker_container" "postgres" {
   env = [
     "POSTGRES_DB=mydb",
     "POSTGRES_USER=user",
-    "POSTGRES_PASSWORD=password"
+    "POSTGRES_PASSWORD=password",
   ]
+
+  # Mount custom postgresql.conf and pg_hba.conf
+  volumes {
+    host_path      = "${abspath(path.module)}/postgresql.conf"
+    container_path = "/etc/postgresql/data/postgresql.conf"
+  }
+  volumes {
+    host_path      = "${abspath(path.module)}/pg_hba.conf"
+    container_path = "/etc/postgresql/data/pg_hba.conf"
+  }
+  volumes {
+    host_path      = "${abspath(path.module)}/primary_data"
+    container_path = "/var/lib/postgresql/data"
+  }
 
   networks_advanced {
     name = docker_network.custom_network.name
   }
 }
+
+# Replica PostgreSQL Server
+resource "docker_container" "replica_postgres" {
+  image = docker_image.postgres.image_id
+  name  = "replica_postgres"
+  env = [
+    "POSTGRES_DB=mydb",
+    "POSTGRES_USER=user",
+    "POSTGRES_PASSWORD=password",
+  ]
+  ports {
+    internal = 5432
+    external = 5433
+  }
+
+  # Volume for mounting postgresql.conf
+  volumes {
+    host_path      = "${abspath(path.module)}/postgresql.conf"
+    container_path = "/etc/postgresql/data/postgresql.conf"
+  }
+
+  # Volume for mounting pg_hba.conf
+  volumes {
+    host_path      = "${abspath(path.module)}/pg_hba.conf"
+    container_path = "/etc/postgresql/data/pg_hba.conf"
+  }
+  volumes {
+    host_path      = "${abspath(path.module)}/replica_data"
+    container_path = "/var/lib/postgresql/data"
+  }
+
+  networks_advanced {
+    name = docker_network.custom_network.name
+  }
+  depends_on = [
+    docker_container.primary_postgres
+  ]
+  # Command to run as a replica
+  command = [
+    # "bash", "-c",
+    # "pg_basebackup -h primary_postgres -D /var/lib/postgresql/data -U user -Fp -Xs -P -R && postgres"
+  ]
+}
+
+
 #------
 # pgAdmin Container
 resource "docker_image" "pgadmin" {
@@ -56,13 +112,12 @@ resource "docker_container" "pgadmin" {
     "PGADMIN_DEFAULT_PASSWORD=admin"
   ]
 
-  # Verlinken mit dem PostgreSQL-Container
   networks_advanced {
     name = docker_network.custom_network.name
   }
 
   depends_on = [
-    docker_container.postgres
+    docker_container.primary_postgres
   ]
 }
 #------
@@ -131,7 +186,7 @@ resource "docker_container" "Api_container" {
   }
   
   depends_on = [
-    docker_container.postgres
+    docker_container.primary_postgres
   ]
 }
 #------
