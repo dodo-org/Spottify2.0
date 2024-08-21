@@ -6,7 +6,11 @@
              Padding="10">
     <ScrollView>
         <VerticalStackLayout Padding="50" BackgroundColor="{StaticResource BackgroundDarkerBlack}">
-            
+            <Label 
+                Text="Home"
+                FontSize="Title"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentView>
