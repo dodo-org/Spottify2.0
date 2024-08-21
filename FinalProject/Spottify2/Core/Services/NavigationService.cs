@@ -19,31 +19,5 @@ namespace Spottify2.Core.Services
         {
             _mainViewContainer.Content = newView;
         }
-
-        private readonly INavigation _navigation;
-
-        // public NavigationService(INavigation navigation)
-        // {
-        //     _navigation = navigation;
-        // }
-
-        // public async Task NavigateToAsync(Page newPage)
-        // {
-        //     await _navigation.PushAsync(newPage);
-        // }
-
-        public bool CanGoBack()
-        {
-            return _navigation.NavigationStack.Count > 1;
-        }
-
-        public Task GoBackAsync()
-        {
-            if (CanGoBack())
-            {
-                return _navigation.PopAsync();
-            }
-            return Task.CompletedTask;
-        }
     }
 }

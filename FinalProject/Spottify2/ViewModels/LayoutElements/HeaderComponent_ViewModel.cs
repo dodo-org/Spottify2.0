@@ -25,16 +25,10 @@ namespace Spottify2.ViewModels.LayoutElements
         public HeaderComponent_ViewModel(NavigationService navigationService)
         {
             _navigationService = navigationService;
-            NavigateBack = new Command(NavigateBackView);
             NavigateToHome = new Command(NavigateToHomeView);
             NavigateToProfile = new Command(NavigateToProfileView);
             NavigateToSearch = new Command(NavigateToSearchView);
             NavigateToSettings = new Command(NavigateToSettingsView);
-
-            // NavigateBackCommand = new Command(async () => await NavigateBackAsync());
-            // NavigateToSearchCommand = new Command(async () => await NavigateToPageAsync(new SearchPage()));
-            // NavigateToSettingsCommand = new Command(async () => await NavigateToPageAsync(new SettingsPage()));
-            // NavigateToProfileCommand = new Command(async () => await NavigateToPageAsync(new ProfilePage()));
         }
 
         #endregion
@@ -54,28 +48,11 @@ namespace Spottify2.ViewModels.LayoutElements
         #endregion
 
         #region Commands
-        // public ICommand NavigateBackCommand { get; }
-        // public ICommand NavigateToSearchCommand { get; }
-        // public ICommand NavigateToSettingsCommand { get; }
-        // public ICommand NavigateToProfileCommand { get; }
-        public ICommand NavigateBack { get; }
         public ICommand NavigateToHome { get; }
         public ICommand NavigateToProfile { get; }
         public ICommand NavigateToSettings { get; }
         public ICommand NavigateToSearch { get; }
 
-
-        private async void NavigateBackView()
-        {
-            if (_navigationService.CanGoBack())
-            {
-                await _navigationService.GoBackAsync();
-            }
-        }
-        // private async Task NavigateToPageAsync(Page page)
-        // {
-        //     await _navigationService.NavigateToAsync(page);
-        // }
 
         private void NavigateToHomeView()
         {

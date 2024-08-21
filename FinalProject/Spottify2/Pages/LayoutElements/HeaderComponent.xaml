@@ -17,14 +17,6 @@
         <!-- Left Section: Back and Home -->
         <HorizontalStackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start">
             <ImageButton
-                Source="back_arrow.png"
-                Command="{Binding NavigateBack}"
-                BackgroundColor="Transparent"
-                WidthRequest="5"
-                HeightRequest="5"
-                />
-
-            <ImageButton
                 Source="home_orange.png"
                 Command="{Binding NavigateToHome}"
                 BackgroundColor="Transparent"
