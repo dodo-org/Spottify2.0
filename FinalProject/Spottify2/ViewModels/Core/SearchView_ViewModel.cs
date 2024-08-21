@@ -3,6 +3,8 @@ using Spottify2.Core;
 using Spottify2.Core.Services;
 using Spottify2.Core.Singeltons;
 using Spottify2.Models.Reply;
+using System.Windows.Input;
+
 
 namespace Spottify2.ViewModels.Core
 {
@@ -57,8 +59,21 @@ namespace Spottify2.ViewModels.Core
         #region Commands
 
 
-
-
         #endregion
+
+        public ICommand PlayCommand { get; }
+
+        // public SearchViewModel()
+        // {
+        //     PlayCommand = new Command<TitleSearchReply_Model>(OnPlayClicked);
+        // }
+
+        // private void OnPlayClicked(TitleSearchReply_Model item)
+        // {
+        //     // Handle playing the music file here
+        //     // You might want to call a method in your audio playback service
+        //     // For example:
+        //     // _audioService.PlayAudio(item.FilePath);
+        // }
     }
 }
