@@ -17,10 +17,18 @@ namespace Spotify_Api.Controllers.Song
 
         public SongController()
         {
-            // Redis Setup
-            string redisConnectionString = "localhost:6379";
-            var redis = ConnectionMultiplexer.Connect(redisConnectionString);
-            _redisDb = redis.GetDatabase();
+            try
+            {
+                // Redis Setup
+                string redisConnectionString = "redis:6379";
+                var redis = ConnectionMultiplexer.Connect(redisConnectionString);
+                _redisDb = redis.GetDatabase();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
         }
 
 
@@ -32,12 +40,24 @@ namespace Spotify_Api.Controllers.Song
             {
                 string cacheKey = $"audio:{fileName}";
 
-                // Check if the file is already in Redis
-                byte[] cachedMp3 = await _redisDb.StringGetAsync(cacheKey);
-                if (cachedMp3 != null)
+                try
                 {
-                    return File(new MemoryStream(cachedMp3), "audio/mpeg", fileName);
+                    if(_redisDb != null)
+                    {
+                        // Check if the file is already in Redis
+                        byte[] cachedMp3 = await _redisDb.StringGetAsync(cacheKey);
+                        if (cachedMp3 != null)
+                        {
+                            return File(new MemoryStream(cachedMp3), "audio/mpeg", fileName);
+                        }
+                    }
+                    
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+                
 
                 
 
@@ -60,18 +80,30 @@ namespace Spotify_Api.Controllers.Song
                     // Set the position back to the beginning of the stream
                     memoryStream.Position = 0;
 
-                    // Store the MP3 file in Redis with an expiration time (e.g., 24 hours)
-                    await _redisDb.StringSetAsync(cacheKey, memoryStream.ToArray(), TimeSpan.FromHours(24));
-                    memoryStream.Position = 0;
+                    //try
+                    //{
+                    //    if(_redisDb != null)
+                    //    {
+                    //        // Store the MP3 file in Redis with an expiration time (e.g., 24 hours)
+                    //        await _redisDb.StringSetAsync(cacheKey, memoryStream.ToArray(), TimeSpan.FromHours(24));
+                    //        memoryStream.Position = 0;
+                    //    }
+                        
+                    //}
+                    //catch (Exception ex)
+                    //{
+                    //    Console.WriteLine(ex.ToString());
+                    //}
+
+                    
                     // Return the MP3 file as a FileStreamResult
-                    memoryStream.Position = 0;
                     return File(memoryStream, "audio/mpeg", fileName);
                 }
             }
             catch (MinioException ex)
             {
-                throw ex;
-                //return StatusCode(500, $"Error occurred: {ex.Message}");
+                
+                return StatusCode(500, $"Error occurred: {ex.Message}");
             }
         }
     }

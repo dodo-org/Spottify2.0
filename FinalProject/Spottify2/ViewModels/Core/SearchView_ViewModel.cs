@@ -28,7 +28,11 @@ namespace Spottify2.ViewModels.Core
             _SearchString = SearchString;
 
             SearchResults = Api_Communication.Instance.Get<List<TitleSearchReply_Model>>(URL_S.GetTitles + _SearchString);
+
+            PlayCommand = new Command(OnPlayClicked);
         }
+
+        
 
         #endregion
 
@@ -67,13 +71,13 @@ namespace Spottify2.ViewModels.Core
         // {
         //     PlayCommand = new Command<TitleSearchReply_Model>(OnPlayClicked);
         // }
+        private void OnPlayClicked(object obj)
+        {
+            TitleSearchReply_Model Song = (TitleSearchReply_Model)obj;
+            Application.Current.MainPage.DisplayAlert("Error" , Song.name, "OK");
 
-        // private void OnPlayClicked(TitleSearchReply_Model item)
-        // {
-        //     // Handle playing the music file here
-        //     // You might want to call a method in your audio playback service
-        //     // For example:
-        //     // _audioService.PlayAudio(item.FilePath);
-        // }
+            
+        }
+        
     }
 }
