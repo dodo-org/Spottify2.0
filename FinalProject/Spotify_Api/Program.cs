@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 using Spotify_Api.DB_Connection;
+using Spotify_Api.DB_Connection.TestData;
 using Spotify_Api.Models.Singeltons;
 using System.Text;
 
@@ -10,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Initialize EF Core
 
-// befehl: Add-Migration <name>
+
 
 builder.Services.AddDbContext<BaseContext>(options =>
     options.UseNpgsql("Host=postgres;Database=mydb;Username=user;Password=password;Port=5432"));
@@ -56,6 +57,8 @@ using (var scope = app.Services.CreateScope())
     //var dbContext = scope.ServiceProvider.GetRequiredService<BaseContext>();
     BaseContext dbContext = new BaseContext();
     dbContext.Database.Migrate();
+    CreateAndAplyTestData createAndAplyTestData = new CreateAndAplyTestData();
+    createAndAplyTestData.ApplyTestData();
 }
 
 // Configure the HTTP request pipeline.

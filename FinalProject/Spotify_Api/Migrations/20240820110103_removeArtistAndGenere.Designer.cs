@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Spotify_Api.DB_Connection;
@@ -11,9 +12,11 @@ using Spotify_Api.DB_Connection;
 namespace Spotify_Api.Migrations
 {
     [DbContext(typeof(BaseContext))]
-    partial class BaseContextModelSnapshot : ModelSnapshot
+    [Migration("20240820110103_removeArtistAndGenere")]
+    partial class removeArtistAndGenere
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,6 +91,7 @@ namespace Spotify_Api.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
@@ -98,7 +102,7 @@ namespace Spotify_Api.Migrations
 
                     b.HasIndex("ArtistID");
 
-                    b.ToTable("Title", (string)null);
+                    b.ToTable("TitleEntity");
                 });
 
             modelBuilder.Entity("Spotify_Api.DB_Connection.Entitys.UserEntity", b =>

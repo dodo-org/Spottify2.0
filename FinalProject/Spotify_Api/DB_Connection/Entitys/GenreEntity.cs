@@ -1,12 +1,12 @@
 ﻿namespace Spotify_Api.DB_Connection.Entitys
 {
-    public class GenreEntity
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
+    //public class GenreEntity
+    //{
+    //    public int Id { get; set; }
+    //    public string Name { get; set; }
 
-        // Fremddaten
+    //    // Fremddaten
 
-        public ICollection<TitleEntity> Titles { get; set; }
-    }
+    //    public ICollection<TitleEntity> Titles { get; set; }
+    //}
 }

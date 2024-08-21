@@ -15,10 +15,12 @@ namespace MJM_Systems.ApiCalls
 
         // Login
 
-        public static string Login                  = "http://localhost:8080/Login";
-        public static string Registration           = "http://localhost:8080/Registration";
+        public static string Login                  = "http://localhost:85/Login";
+        public static string Registration           = "http://localhost:85/Registration";
 
-        
+        public static string GetTitles              = "http://localhost:85/MusicSearch/search?query=";
+
+
 
 
 
